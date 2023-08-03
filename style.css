@@ -2,6 +2,11 @@
   margin: 0px;
   padding: 0px;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 a {
   display: inline-block;
 }
@@ -71,4 +76,146 @@ header {
 .info-ad > span {
   padding-left: 16px;
   border-left: 12px solid #f16d7f;
+}
+span > h1 {
+  color: #222;
+  font-family: Lato;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+span > h2 {
+  color: #222;
+  font-family: Lato;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.threads {
+  margin-top: 65px;
+  max-width: 1140px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.threads-item-img,
+.down-one {
+  background-color: rgba(33, 22, 22, 0.7);
+  background-blend-mode: overlay;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: 260px;
+  text-decoration: none;
+}
+.down-one {
+  width: 1140px;
+  height: 180px;
+}
+.threads-item-title {
+  color: #fff;
+  text-align: center;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.threads-item-description {
+  color: #f16d7f;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.fetured {
+  margin-top: 96px;
+  color: #222;
+  font-family: Lato;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.fetured-describe {
+  margin-top: 6px;
+  color: #9f9f9f;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.quick-sale {
+  max-width: 1140px;
+  margin-top: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.quick-sale-item {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+}
+.quick-sale-item-img {
+  width: 360px;
+  height: 420px;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-color: #f8f8f8;
+}
+.quick-sale-item-title {
+  margin: 24px 16px 16px 16px;
+  color: #000;
+  font-family: Lato;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.quick-sale-item-description {
+  margin: 0px 16px 16px 16px;
+  color: #5d5d5d;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.quick-sale-item-price {
+  margin: 0px 16px 24px 16px;
+  color: #f16d7f;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.catalog-link {
+  margin-top: 48px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 212px;
+  height: 48px;
+  border: 1px solid #ff6a6a;
+  /* fonts */
+  color: #f26376;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
 }
