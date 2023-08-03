@@ -1,7 +1,11 @@
+html {
+  display: flex;
+}
 * {
   margin: 0px;
   padding: 0px;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -67,10 +71,8 @@ header {
   justify-content: center;
   background-color: #f1e4e6;
   align-items: center;
-  width: 100vw;
 }
 .info-ad > img {
-  max-width: 800px;
   max-height: 764px;
 }
 .info-ad > span {
@@ -218,4 +220,33 @@ span > h2 {
   font-weight: 400;
   line-height: normal;
   text-decoration: none;
+}
+@media (min-width: 768px) {
+  header {
+    width: 768px;
+  }
+  .info-ad {
+    height: 384px;
+    width: 768px;
+  }
+  .info-ad > img {
+    width: 250px;
+  }
+  .threads {
+    margin: 20px 5px 0px;
+    margin-top: 20px;
+  }
+  .down-one {
+    width: 360px;
+    height: 260px;
+    background-size: cover;
+  }
+  .quick-sale {
+    justify-self: center;
+    gap: 10px;
+    justify-content: space-around;
+  }
+  .fetured {
+    margin-top: 20px;
+  }
 }
