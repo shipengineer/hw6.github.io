@@ -1,0 +1,74 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  display: inline-block;
+}
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+header {
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #222;
+  height: 75px;
+}
+.logo {
+  margin-left: 32px;
+  display: inline-block;
+  height: 38px;
+  width: 44px;
+  background-image: url(./img/logo.png);
+}
+.search-button {
+  height: 27px;
+  width: 26px;
+  margin-left: 85px;
+  background-image: url(./img/search-icon.svg);
+}
+.burger {
+  background-color: transparent;
+  height: 23px;
+  width: 32px;
+  background-image: url(./img/burger.png);
+  background-size: cover;
+}
+.user-page {
+  margin-left: 25px;
+  height: 29px;
+  width: 29px;
+  background-image: url(./img/user.png);
+}
+.cart-page {
+  margin-left: 42px;
+  margin-right: 41px;
+  height: 29px;
+  width: 32px;
+  background-image: url(./img/cart.png);
+}
+/* next one */
+
+.info-ad {
+  height: 764px;
+  display: flex;
+  justify-content: center;
+  background-color: #f1e4e6;
+  align-items: center;
+  width: 100vw;
+}
+.info-ad > img {
+  max-width: 800px;
+  max-height: 764px;
+}
+.info-ad > span {
+  padding-left: 16px;
+  border-left: 12px solid #f16d7f;
+}
