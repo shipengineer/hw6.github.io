@@ -23,8 +23,7 @@ button {
   background-color: transparent;
 }
 header {
-  width: 100vw;
-
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -177,6 +176,21 @@ span > h2 {
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-to-cart {
+  display: none;
+  justify-self: center;
+}
+.quick-sale-item-img:hover {
+  background-color: rgba(58, 56, 56, 0.86);
+  background-blend-mode: overlay;
+}
+.quick-sale-item-img:hover .add-to-cart {
+  display: block;
 }
 .quick-sale-item-title {
   margin: 24px 16px 16px 16px;
@@ -260,5 +274,72 @@ span > h2 {
   }
   .fetured {
     margin-top: 20px;
+  }
+}
+@media (max-width: 380px) {
+  header {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .logo {
+    margin-left: 16px;
+  }
+  .burger {
+    margin-right: 16px;
+  }
+  .search-button {
+    margin-left: 41px;
+  }
+  .user-page {
+    display: none;
+  }
+  .cart-page {
+    display: none;
+  }
+  .info-ad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 363px;
+  }
+  span > h1 {
+    color: #222;
+    font-family: Lato;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+  span > h2 {
+    color: #222;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .info-ad > span {
+    padding-left: 15px;
+  }
+  .info-ad > img {
+    display: none;
+  }
+  .threads {
+    margin-top: 64px;
+  }
+  .threads-item-img {
+    width: 343px;
+    height: 247px;
+  }
+  .down-one {
+    width: 343px;
+    height: 111px;
+    background-position: center;
+  }
+  .fetured {
+    margin-top: 64px;
+  }
+  .quick-sale {
+    margin-top: 64px;
   }
 }
