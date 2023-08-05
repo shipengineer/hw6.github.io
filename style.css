@@ -162,6 +162,7 @@ span > h2 {
   max-width: 1140px;
   margin-top: 48px;
   display: flex;
+  justify-content:center;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -238,6 +239,10 @@ span > h2 {
   line-height: normal;
   text-decoration: none;
 }
+@media(max-width:1025px){
+
+.down-one{
+  width:100%;}}
 @media (max-width: 800px) {
   html {
     overflow-x: hidden;
