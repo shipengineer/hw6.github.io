@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <title>Catalog</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="#" class="logo">
+            </a>
+            <button class="search-button"></button>
+        </div>
+        <div>
+            <button class="burger"></button>
+            <a href="#" class="user-page"></a>
+            <a href="#" class="cart-page"></a>
+        </div>
+    </header>
+    <div style="background-color: #F7E4E2; width: 100%; display: flex; justify-content: center;">
+        <div class="top-navigation">
+            <h1 class="category-name">NEW ARRIVALS</h1>
+            <div class="breadcrumbs">
+                <a href="/index.html" class="breadcrumbs_link">HOME/ </a>
+                <a href="#" class="breadcrumbs_link">MEN/ </a>
+                <a href="#" class="breadcrumbs_link_active" style="color: #F16D7F;">NEW ARRIVALS</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="filter">
+        <button class="filter__button-abc">FILTER<svg xmlns="http://www.w3.org/2000/svg" width="15" height="10"
+                viewBox="0 0 15 10" fill="none">
+                <path
+                    d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"
+                    fill="black" />
+            </svg></button>
+
+        <div class="filter-parametr">
+            <button class="filter__category">TRENDING NOW
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="6" viewBox="0 0 11 6" fill="none"
+                    style="margin-right:28px ;">
+                    <path
+                        d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z"
+                        fill="#6F6E6E" />
+                </svg></button>
+            <button class="filter__size">SIZE
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="6" viewBox="0 0 11 6" fill="none"
+                    style="margin-right:28px ;">
+                    <path
+                        d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z"
+                        fill="#6F6E6E" />
+                </svg></button>
+            <button class="filter__price">PRICE
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="6" viewBox="0 0 11 6" fill="none"
+                    style="margin-right:28px ;">
+                    <path
+                        d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z"
+                        fill="#6F6E6E" />
+                </svg></button>
+        </div>
+    </div>
+
+    <div class="quick-sale">
+        <div class="quick-sale-item">
+            <a href="#" class="quick-sale-item-img" style="background-image: url(./img/featured-left-up.png)"><img
+                    src="./img/Add to cart.png" class="add-to-cart" alt="добавить в корзину"></a>
+            <span class="quick-sale-item-title">ELLERY X M'O CAPSULE</span>
+            <span class="quick-sale-item-description">Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
+            <span class="quick-sale-item-price">$52.00</span>
+        </div>
+        <div class="quick-sale-item">
+            <a href="#" class="quick-sale-item-img"
+                style="background-image: url(./img/featured-center-up.png);background-color: #F7E4E2;"><img
+                    src="./img/Add to cart.png" class="add-to-cart" alt="добавить в корзину"></a>
+
+            <span class="quick-sale-item-title">ELLERY X M'O CAPSULE</span>
+            <span class="quick-sale-item-description">Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
+            <span class="quick-sale-item-price">$52.00</span>
+        </div>
+        <div class="quick-sale-item">
+            <a href="#" class="quick-sale-item-img" style="background-image: url(./img/featured-rigth-up.png)"><img
+                    src="./img/Add to cart.png" class="add-to-cart" alt="добавить в корзину"></a>
+
+            <span class="quick-sale-item-title">ELLERY X M'O CAPSULE</span>
+            <span class="quick-sale-item-description">Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
+            <span class="quick-sale-item-price">$52.00</span>
+        </div>
+        <div class="quick-sale-item">
+            <a href="#" class="quick-sale-item-img" style="background-image: url(./img/featured-left-down.png)"><img
+                    src="./img/Add to cart.png" class="add-to-cart" alt="добавить в корзину"></a>
+
+            <span class="quick-sale-item-title">ELLERY X M'O CAPSULE</span>
+            <span class="quick-sale-item-description">Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
+            <span class="quick-sale-item-price">$52.00</span>
+        </div>
+        <div class="quick-sale-item">
+            <a href="#" class="quick-sale-item-img" style="background-image: url(./img/featured-center-down.png)"><img
+                    src="./img/Add to cart.png" class="add-to-cart" alt="добавить в корзину"></a>
+
+            <span class="quick-sale-item-title">ELLERY X
+                M'O CAPSULE</span>
+            <span class="quick-sale-item-description">Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
+            <span class="quick-sale-item-price">$52.00</span>
+        </div>
+        <div class="quick-sale-item">
+            <a href="#" class="quick-sale-item-img" style="background-image: url(./img/featured-rigth-down.png);"><img
+                    src="./img/Add to cart.png" class="add-to-cart" alt="добавить в корзину"></a>
+
+            <span class="quick-sale-item-title">ELLERY X M'O CAPSULE</span>
+            <span class="quick-sale-item-description">Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
+            <span class="quick-sale-item-price">$52.00</span>
+        </div>
+        <div class="quick-sale-item">
+            <a href="#" class="quick-sale-item-img" style="background-image: url(./img/featured-left-up.png)"><img
+                    src="./img/Add to cart.png" class="add-to-cart" alt="добавить в корзину"></a>
+            <span class="quick-sale-item-title">ELLERY X M'O CAPSULE</span>
+            <span class="quick-sale-item-description">Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
+            <span class="quick-sale-item-price">$52.00</span>
+        </div>
+        <div class="quick-sale-item">
+            <a href="#" class="quick-sale-item-img"
+                style="background-image: url(./img/featured-center-up.png);background-color: #F7E4E2;"><img
+                    src="./img/Add to cart.png" class="add-to-cart" alt="добавить в корзину"></a>
+
+            <span class="quick-sale-item-title">ELLERY X M'O CAPSULE</span>
+            <span class="quick-sale-item-description">Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
+            <span class="quick-sale-item-price">$52.00</span>
+        </div>
+        <div class="quick-sale-item">
+            <a href="#" class="quick-sale-item-img" style="background-image: url(./img/featured-rigth-up.png)"><img
+                    src="./img/Add to cart.png" class="add-to-cart" alt="добавить в корзину"></a>
+
+            <span class="quick-sale-item-title">ELLERY X M'O CAPSULE</span>
+            <span class="quick-sale-item-description">Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
+            <span class="quick-sale-item-price">$52.00</span>
+        </div>
+    </div>
+    <nav role="navigation" class="navigation-section">
+        <ul class="custom-navigation">
+            <li type="none" class="nav-number" style="padding:15px 0px 15px 15px ;"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14" fill="none">
+                    <path d="M8.99512 2L3.99512 7L8.99512 12L7.99512 14L0.995117 7L7.99512 0L8.99512 2Z" fill="black" />
+                </svg></li>
+            <li type="none" class="nav-number" style="color:#EF5B70;">1</li>
+            <li type="none" class="nav-number">2</li>
+            <li type="none" class="nav-number">3</li>
+            <li type="none" class="nav-number">4</li>
+            <li type="none" class="nav-number">5</li>
+            <li type="none" class="nav-number">6</li>
+            <li type="none" class="nav-number">....</li>
+            <li type="none" class="nav-number">20</li>
+            <li type="none" class="nav-number" style="padding-right: 15px;"><svg xmlns="http://www.w3.org/2000/svg"
+                    width="9" height="14" viewBox="0 0 9 14" fill="none">
+                    <path d="M0.994995 12L5.995 7L0.994995 2L1.995 0L8.995 7L1.995 14L0.994995 12Z" fill="black" />
+                </svg></li>
+        </ul>
+    </nav>
+
+
+    <footer>
+
+        <div class="footer-offers">
+            <a href="/" class="offer-container">
+                <img src="/img/track.svg">
+                <span class="footer-offer-span-title">Free
+                    Delivery</span><span class="footer-offer-span-description">Worldwide delivery on all. Authorit
+                    tively morph next-generation innov tion with extensive models.</span> </a>
+
+            <a href="/" class="offer-container">
+                <img src="/img/discount-icon.svg" alt=""><span class="footer-offer-span-title">Sales &
+                    discounts</span><span class="footer-offer-span-description">Worldwide delivery on all. Authorit
+                    tively morph
+                    next-generation innov tion with extensive models.</span> </a>
+
+            <a href="/" class="offer-container">
+                <img src="/img/crouwn.svg" alt=""><span class="footer-offer-span-title">Quality
+                    assurance</span><span class="footer-offer-span-description">Worldwide delivery on all. Authorit
+                    tively morph next-generation innov tion with extensive models.</span> </a>
+        </div>
+        <div class="subscribe">
+            <img src="./img/Layer 41.png" class="bg-img">
+            <div class="subscribe-rating">
+                <img src="/img/Intersect.svg" alt="">
+                <span class="subscribe-rating-span">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+                    purus condimentum“</span>
+            </div>
+            <div class="subscribe-field">
+                <span class="subscribe-field-title">SUBSCRIBE</span>
+                <span class="subscribe-field-description">FOR OUR NEWLETTER AND PROMOTION</span>
+                <form action="/index.html" method="post" class="subscribe-field-form">
+                    <input type="email" placeholder="Enter Your Email">
+                    <button class="subscribe-field-button">Subscribe</button>
+
+                </form>
+            </div>
+        </div>
+        <div class="footer-contacts">
+            <span class="rigths">© 2022 Brand All Rights Reserved.</span>
+
+
+            <div class="contacts-link-container">
+                <a href="#" class="contact-link"><img src="./img/facebook-f-brands (3) 1.svg"></a>
+                <a href="#" class="contact-link"><img src="./img/instagram-brands 1.svg"></a>
+                <a href="#" class="contact-link"><img src="./img/pinterest-p-brands 1.svg"></a>
+                <a href="#" class="contact-link"><img src="./img/twitter-brands 1.svg"></a>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>

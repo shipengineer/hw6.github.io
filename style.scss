@@ -1,8 +1,8 @@
+$back-ground-black: #222224;
 html {
   display: flex;
   overflow-x: hidden;
 }
-
 * {
   margin: 0px;
   padding: 0px;
@@ -355,7 +355,7 @@ span > h2 {
 
 .footer-contacts {
   height: 79px;
-  background-color: #222224;
+  background-color: $back-ground-black;
 }
 
 .bg-img {
@@ -378,7 +378,7 @@ span > h2 {
 
 .subscribe-rating-span {
   width: 360px;
-  color: #222224;
+  color: $back-ground-black;
   text-align: center;
   font-family: Lato;
   font-size: 20px;
@@ -402,7 +402,7 @@ span > h2 {
 }
 
 .subscribe-field-title {
-  color: #222224;
+  color: $back-ground-black;
   text-align: center;
   font-family: Lato;
   font-size: 24px;
@@ -412,7 +412,7 @@ span > h2 {
 }
 
 .subscribe-field-description {
-  color: #222224;
+  color: $back-ground-black;
   font-family: Lato;
   font-size: 18px;
   font-style: normal;
@@ -572,6 +572,8 @@ span > h2 {
     margin-top: 50px;
   }
 }
+// NOTE
+// CATALOG
 .top-navigation {
   height: 148px;
   width: 1140px;
@@ -579,7 +581,6 @@ span > h2 {
   align-items: center;
   justify-content: space-between;
 }
-
 .category-name {
   color: #f16d7f;
   font-family: Lato;
@@ -588,10 +589,11 @@ span > h2 {
   font-weight: 400;
   line-height: normal;
   width: 194px;
-} 
+} /*# sourceMappingURL=style.css.map */
 .breadcrumbs {
   display: flex;
   flex-direction: row;
+
   color: #6f6e6e;
   font-family: Lato;
   font-size: 14px;
@@ -599,11 +601,9 @@ span > h2 {
   font-weight: 400;
   line-height: normal;
 }
-
 .breadcrumbs > a {
   text-decoration: none;
 }
-
 .filter {
   display: flex;
   width: 1140px;
@@ -617,18 +617,17 @@ span > h2 {
   font-weight: 400;
   line-height: normal;
 }
-
 .filter__button-abc {
   font-weight: 600;
 }
 
+// pagination
 .navigation-section {
   margin-top: 48px;
   margin-bottom: 96px;
   text-align: center;
   border: 1px solid #e6e6e6;
 }
-
 .custom-navigation {
   width: auto;
   max-width: none;
@@ -636,10 +635,10 @@ span > h2 {
   border-radius: 0.25em;
   align-items: center;
 }
-
 .nav-number {
   padding: 15px 0px 15px 0px;
   width: 43px;
+
   color: #c4c4c4;
   font-family: Lato;
   font-size: 16px;
@@ -649,4 +648,4 @@ span > h2 {
   marker-start: none;
   margin: 0;
   float: left;
-}/*# sourceMappingURL=style.css.map */
+}
