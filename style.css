@@ -10,8 +10,9 @@ html {
 
 body {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
 }
 
@@ -31,9 +32,11 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: row;
   background-color: #222;
   height: 75px;
+  justify-content: space-between;
 }
 
 .logo {
@@ -76,12 +79,13 @@ header {
 
 /* next one */
 .info-ad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   width: 100%;
   height: 764px;
-  display: flex;
-  justify-content: center;
   background-color: #f1e4e6;
-  align-items: center;
 }
 
 .info-ad > img {
@@ -103,12 +107,13 @@ span > h1 {
 }
 
 span > h2 {
-  color: #222;
   font-family: Lato;
-  font-size: 32px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  color: #222;
+  font-size: 32px;
 }
 
 .threads {
@@ -122,12 +127,12 @@ span > h2 {
 
 .threads-item-img,
 .down-one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-color: rgba(33, 22, 22, 0.7);
   background-blend-mode: overlay;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 360px;
   height: 260px;
   text-decoration: none;
@@ -141,67 +146,68 @@ span > h2 {
 .threads-item-title {
   color: #fff;
   text-align: center;
-  font-family: Lato;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .threads-item-description {
-  color: #f16d7f;
   font-family: Lato;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  color: #f16d7f;
 }
 
 .fetured {
-  margin-top: 96px;
-  color: #222;
   font-family: Lato;
-  font-size: 30px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-top: 96px;
+  color: #222;
+  font-size: 30px;
 }
 
 .fetured-describe {
-  margin-top: 6px;
-  color: #9f9f9f;
   font-family: Lato;
-  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-top: 6px;
+  color: #9f9f9f;
+  font-size: 14px;
 }
 
 .quick-sale {
   max-width: 1140px;
   margin-top: 48px;
   display: flex;
+  align-items: center;
   justify-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 30px;
 }
 
 .quick-sale-item {
-  width: 360px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
+  width: 360px;
   background-color: #f8f8f8;
 }
 
 .quick-sale-item-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 360px;
   height: 420px;
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-color: #f8f8f8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .add-to-cart {
@@ -219,13 +225,13 @@ span > h2 {
 }
 
 .quick-sale-item-title {
-  margin: 24px 16px 16px 16px;
-  color: #000;
   font-family: Lato;
-  font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin: 24px 16px 16px 16px;
+  color: #000;
+  font-size: 13px;
 }
 
 .quick-sale-item-description {
@@ -239,13 +245,13 @@ span > h2 {
 }
 
 .quick-sale-item-price {
-  margin: 0px 16px 24px 16px;
-  color: #f16d7f;
   font-family: Lato;
-  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin: 0px 16px 24px 16px;
+  color: #f16d7f;
+  font-size: 16px;
 }
 
 .catalog-link {
@@ -258,12 +264,12 @@ span > h2 {
   height: 48px;
   border: 1px solid #ff6a6a;
   /* fonts */
-  color: #f26376;
   font-family: Lato;
-  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  color: #f26376;
+  font-size: 16px;
   text-decoration: none;
 }
 
@@ -315,42 +321,43 @@ span > h2 {
   }
 }
 .footer-offers {
-  width: 100vw;
   display: flex;
-  flex-direction: row;
-  height: 341px;
+  align-items: center;
   justify-content: center;
+  flex-direction: row;
+  width: 100vw;
+  height: 341px;
   background-color: black;
 }
 
 .offer-container {
-  text-decoration: none;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
   gap: 16px;
 }
 
 .footer-offer-span-title {
-  color: #fbfbfb;
   font-family: Lato;
-  font-size: 19.96px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  color: #fbfbfb;
+  font-size: 19.96px;
   text-decoration: none;
 }
 
 .footer-offer-span-description {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 14px;
   width: 360px;
   color: #fbfbfb;
   text-align: center;
-  font-family: Lato;
-  font-size: 13.972px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
 }
 
 .footer-contacts {
@@ -367,56 +374,53 @@ span > h2 {
 }
 
 .subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   gap: 223px;
   height: 448px;
   background-size: cover;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 
 .subscribe-rating-span {
-  width: 360px;
-  color: #222224;
-  text-align: center;
   font-family: Lato;
-  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  font-size: 20px;
+  width: 360px;
+  color: #222224;
+  text-align: center;
 }
 
-.subscribe-rating {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
+.subscribe-rating,
 .subscribe-field {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .subscribe-field-title {
-  color: #222224;
-  text-align: center;
   font-family: Lato;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
+  line-height: normal;
+  color: #222224;
+  text-align: center;
   line-height: 167.2%; /* 40.128px */
 }
 
 .subscribe-field-description {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   color: #222224;
   font-family: Lato;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 167.2%;
 }
 
@@ -436,13 +440,13 @@ span > h2 {
 }
 
 .subscribe-field-button {
-  color: #fff;
-  text-align: center;
   font-family: Lato;
-  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
   width: 100px;
   background-color: #f16d7f;
   border-top-right-radius: 24px;
@@ -456,21 +460,22 @@ span > h2 {
 }
 
 .footer-contacts {
-  height: 79px;
   display: flex;
-  flex-direction: row;
-  gap: 655px;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
+  height: 79px;
+  gap: 655px;
 }
 
 .rigths {
-  color: #fbfbfb;
   font-family: Lato;
-  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  color: #fbfbfb;
+  font-family: Lato;
+  font-size: 16px;
 }
 
 .contacts-link-container {
@@ -483,9 +488,9 @@ span > h2 {
 
 .contact-link {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 @media (max-width: 426px) {
@@ -523,12 +528,13 @@ span > h2 {
     line-height: normal;
   }
   span > h2 {
-    color: #222;
     font-family: Lato;
-    font-size: 20px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    color: #222;
+    font-size: 20px;
   }
   .info-ad > span {
     padding-left: 15px;
@@ -581,23 +587,23 @@ span > h2 {
 }
 
 .category-name {
-  color: #f16d7f;
   font-family: Lato;
-  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  color: #f16d7f;
+  font-size: 24px;
   width: 194px;
 } 
 .breadcrumbs {
-  display: flex;
-  flex-direction: row;
-  color: #6f6e6e;
   font-family: Lato;
-  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  display: flex;
+  flex-direction: row;
+  color: #6f6e6e;
+  font-size: 14px;
 }
 
 .breadcrumbs > a {
@@ -605,17 +611,17 @@ span > h2 {
 }
 
 .filter {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   display: flex;
   width: 1140px;
   height: 100px;
   align-items: center;
   gap: 320px;
   color: #6f6e6e;
-  font-family: Lato;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .filter__button-abc {
