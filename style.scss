@@ -542,18 +542,113 @@ span > h2 {
 .breadcrumbs > a {
   text-decoration: none;
 }
+.breadcrumbs_link:not(:last-child)::after {
+  content: '\/';
+}
 .filter {
   @include font__Lato__normal__400();
   display: flex;
   width: 1140px;
-  height: 100px;
-  align-items: center;
-  gap: 320px;
+  align-items: start;
+  height: 1rem;
   color: #6f6e6e;
   font-size: 14px;
+  padding-top: 39px;
 }
 .filter__button-abc {
+  margin-right: 320px;
   font-weight: 600;
+  color: #6f6e6e;
+}
+.filter-button > svg {
+  fill: #6f6e6e;
+}
+.filter [open] {
+  .filter-button {
+    color: #ef5b70;
+  }
+  margin-right: 0px;
+  width: 360px;
+  .filter-button > svg {
+    fill: #ef5b70;
+  }
+  position: relative;
+  z-index: 3;
+  background-color: #fff;
+  padding: 17px;
+  filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
+}
+.filter-button {
+  @include font__Lato__normal__400();
+  color: #6f6e6e;
+
+  font-weight: 600;
+  cursor: pointer;
+}
+.filter-button::marker {
+  content: '';
+}
+.secondary-category {
+  @include font__Lato__normal__400();
+  font-size: 14px;
+  color: #6f6e6e;
+  margin: 11px 0px 11px 17px;
+}
+.main-category {
+  @include flex__position-center__row();
+  @include font__Lato__normal__400();
+  justify-content: flex-start;
+  padding-left: 11px;
+  height: 37px;
+  color: #ef5b70;
+  padding-left: 11px;
+  border-left: 5px solid #ef5b70;
+  border-bottom: 1px solid #ebebeb;
+  margin-top: 24px;
+}
+.filter__category {
+  @include font__Lato__normal__400();
+  font-size: 14px;
+  margin-right: 28px;
+  cursor: pointer;
+}
+.filter-parametr [open] {
+  @include flex__position-center__column();
+}
+.filter__category--element::marker {
+  content: '';
+}
+.filter__category--element::after {
+  content: url('./img/Vector.svg');
+  margin-left: 10px;
+}
+.filter__category:hover {
+  color: #ef5b70;
+}
+.filter__category > img {
+  margin-left: 10px;
+}
+.filter-parametr {
+  @include flex__position-center__row();
+  align-items: flex-start;
+}
+.filter-parametr::marker {
+  content: '';
+}
+
+.filter__category__rigth {
+  cursor: pointer;
+  margin-right: 28px;
+}
+.filter-parametr [open] {
+  background-color: #fff;
+  position: relative;
+  z-index: 3;
+  width: max-content;
+  padding: 9px;
+}
+.filter-parametr:first-child {
+  background-color: transparent;
 }
 
 // pagination
