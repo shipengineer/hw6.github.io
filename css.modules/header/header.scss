@@ -2,13 +2,17 @@
 @import '../main-colors/main-colors.scss';
 
 header {
+  display: grid;
+  justify-content: normal;
+  position: sticky;
+  top: 0px;
   width: 100%;
-  @include flex__position-center(row);
   background-color: $secondary-background;
   height: 75px;
 }
 .header-container {
   @include flex__position-center(row);
+  justify-self: center;
   justify-content: space-between;
   width: 1140px;
   max-width: 1140px;
@@ -26,11 +30,16 @@ header {
   margin-left: 85px;
 }
 
-.burger {
+.check-menu {
+  // display: none;
   background-color: transparent;
   height: 23px;
   width: 32px;
+  margin-right: 25px;
   background-size: cover;
+}
+#toggle:checked ~ .info-ad {
+  background-color: aqua;
 }
 
 .user-page {

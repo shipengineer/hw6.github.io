@@ -1,0 +1,37 @@
+@import '../modificators/modificators.scss';
+@import '../main-colors/main-colors.scss';
+@import '../fonts/fonts.scss';
+
+.side-menu {
+  @include flex__position-center(column);
+  width: 232px;
+  height: 639px;
+  z-index: 99;
+  position: fixed;
+  top: 75px;
+  //   left: calc(100vw + 232px);
+  justify-self: end;
+  align-items: flex-start;
+  background-color: $main-background;
+  padding-bottom: 32px;
+}
+
+.side-menu__close-button {
+  margin: 16px 16px 16px 203px;
+}
+
+.side-menu__title {
+  @include Lato(14px, 700);
+  margin: 0px 0px 4px 34px;
+}
+.side-menu__subtitle {
+  @include Lato(14px, 400);
+  color: $primary;
+  margin: 20px 117px 0px 33px;
+}
+.side-menu__subtitle__category {
+  @include Lato(14px, 400);
+  color: $filter-main;
+  margin: 12px 0px 0px 55px;
+  text-decoration: none;
+}

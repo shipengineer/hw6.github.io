@@ -32,12 +32,62 @@ button {
   background-color: transparent;
 }
 
-header {
-  width: 100%;
+.side-menu {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
+  width: 232px;
+  height: 639px;
+  z-index: 99;
+  position: fixed;
+  top: 75px;
+  justify-self: end;
+  align-items: flex-start;
+  background-color: #fff;
+  padding-bottom: 32px;
+}
+
+.side-menu__close-button {
+  margin: 16px 16px 16px 203px;
+}
+
+.side-menu__title {
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0px 0px 4px 34px;
+}
+
+.side-menu__subtitle {
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #f16d7f;
+  margin: 20px 117px 0px 33px;
+}
+
+.side-menu__subtitle__category {
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #6f6e6e;
+  margin: 12px 0px 0px 55px;
+  text-decoration: none;
+}
+
+header {
+  display: grid;
+  justify-content: normal;
+  position: sticky;
+  top: 0px;
+  width: 100%;
   background-color: #000;
   height: 75px;
 }
@@ -47,6 +97,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  justify-self: center;
   justify-content: space-between;
   width: 1140px;
   max-width: 1140px;
@@ -65,11 +116,16 @@ header {
   margin-left: 85px;
 }
 
-.burger {
+.check-menu {
   background-color: transparent;
   height: 23px;
   width: 32px;
+  margin-right: 25px;
   background-size: cover;
+}
+
+#toggle:checked ~ .info-ad {
+  background-color: aqua;
 }
 
 .user-page {
