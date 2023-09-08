@@ -409,9 +409,13 @@ span > h2 {
 }
 
 .threads-item-title {
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   color: #fff;
   text-align: center;
-  font-size: 16px;
 }
 
 .threads-item-description {
