@@ -5,32 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="catalog.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <title>Catalog</title>
 
 </head>
 
 <body>
     <header>
-        <div>
-            <a href="index.html" class="logo">
-            </a>
-            <button class="search-button"></button>
-        </div>
-        <div>
-            <button class="burger"></button>
-            <a href="#" class="user-page"></a>
-            <a href="#" class="cart-page"></a>
+        <div class="header-container">
+            <div>
+                <a href="#" class="logo"><img src="../img/header/logo.png">
+                </a>
+                <button class="search-button">
+                    <img src="../img/header/search-icon.svg">
+                </button>
+            </div>
+            <div>
+                <button class="burger"><img src="../img/header/burger.png"></button>
+                <a href="#" class="user-page"><img src="../img/header/user.png"></a>
+                <a href="#" class="cart-page"><img src="../img/header/cart.png"></a>
+            </div>
         </div>
     </header>
     <div style="background-color: #F7E4E2; width: 100%; display: flex; justify-content: center;">
         <div class="top-navigation">
             <h1 class="category-name">NEW ARRIVALS</h1>
             <div class="breadcrumbs">
-                <a href="index.html" class="breadcrumbs_link">HOME </a>
+                <a href="../index/index.html" class="breadcrumbs_link">HOME </a>
                 <a href="#" class="breadcrumbs_link">MEN </a>
                 <a href="#" class="breadcrumbs_link_active" style="color: #F16D7F;">NEW ARRIVALS</a>
             </div>
@@ -94,87 +98,87 @@
     </div>
 
     <div class="quick-sale">
-        <div class="quick-sale-item">
-            <a href="#" class="quick-sale-item-img" style="background-image: url(./img/featured-left-up.png)"><img
-                    src="./img/Add to cart.png" class="add-to-cart" alt="добавить в корзину"></a>
-            <span class="quick-sale-item-title">ELLERY X M'O CAPSULE</span>
-            <span class="quick-sale-item-description">Known for her sculptural takes on traditional tailoring,
+        <div class="card">
+            <a href="#" class="card-img" style="background-image: url(../img/item/featured-left-up.png )"><img
+                    src="../img/item/Add to cart.png" class="add-to-cart" alt="добавить в корзину"></a>
+            <span class="card-title">ELLERY X M'O CAPSULE</span>
+            <span class="card-description">Known for her sculptural takes on traditional tailoring,
                 Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
-            <span class="quick-sale-item-price">$52.00</span>
+            <span class="card-price">$52.00</span>
         </div>
-        <div class="quick-sale-item">
-            <a href="#" class="quick-sale-item-img"
-                style="background-image: url(./img/featured-center-up.png);background-color: #F7E4E2;"><img
-                    src="./img/Add to cart.png" class="add-to-cart" alt="добавить в корзину"></a>
+        <div class="card">
+            <a href="#" class="card-img"
+                style="background-image: url(../img/item/featured-center-up.png);background-color: #F7E4E2;"><img
+                    src="../img/item/Add to cart.png" class="add-to-cart" alt="добавить в корзину"></a>
 
-            <span class="quick-sale-item-title">ELLERY X M'O CAPSULE</span>
-            <span class="quick-sale-item-description">Known for her sculptural takes on traditional tailoring,
+            <span class="card-title">ELLERY X M'O CAPSULE</span>
+            <span class="card-description">Known for her sculptural takes on traditional tailoring,
                 Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
-            <span class="quick-sale-item-price">$52.00</span>
+            <span class="card-price">$52.00</span>
         </div>
-        <div class="quick-sale-item">
-            <a href="#" class="quick-sale-item-img" style="background-image: url(./img/featured-rigth-up.png)"><img
-                    src="./img/Add to cart.png" class="add-to-cart" alt="добавить в корзину"></a>
+        <div class="card">
+            <a href="#" class="card-img" style="background-image: url(../img/item/featured-rigth-up.png)"><img
+                    src="../img/item/Add to cart.png" class="add-to-cart" alt="добавить в корзину"></a>
 
-            <span class="quick-sale-item-title">ELLERY X M'O CAPSULE</span>
-            <span class="quick-sale-item-description">Known for her sculptural takes on traditional tailoring,
+            <span class="card-title">ELLERY X M'O CAPSULE</span>
+            <span class="card-description">Known for her sculptural takes on traditional tailoring,
                 Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
-            <span class="quick-sale-item-price">$52.00</span>
+            <span class="card-price">$52.00</span>
         </div>
-        <div class="quick-sale-item">
-            <a href="#" class="quick-sale-item-img" style="background-image: url(./img/featured-left-down.png)"><img
-                    src="./img/Add to cart.png" class="add-to-cart" alt="добавить в корзину"></a>
+        <div class="card">
+            <a href="#" class="card-img" style="background-image: url(../img/item/featured-left-down.png)"><img
+                    src="../img/item/Add to cart.png" class="add-to-cart" alt="добавить в корзину"></a>
 
-            <span class="quick-sale-item-title">ELLERY X M'O CAPSULE</span>
-            <span class="quick-sale-item-description">Known for her sculptural takes on traditional tailoring,
+            <span class="card-title">ELLERY X M'O CAPSULE</span>
+            <span class="card-description">Known for her sculptural takes on traditional tailoring,
                 Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
-            <span class="quick-sale-item-price">$52.00</span>
+            <span class="card-price">$52.00</span>
         </div>
-        <div class="quick-sale-item">
-            <a href="#" class="quick-sale-item-img" style="background-image: url(./img/featured-center-down.png)"><img
-                    src="./img/Add to cart.png" class="add-to-cart" alt="добавить в корзину"></a>
+        <div class="card">
+            <a href="#" class="card-img" style="background-image: url(../img/item/featured-center-down.png)"><img
+                    src="../img/item/Add to cart.png" class="add-to-cart" alt="добавить в корзину"></a>
 
-            <span class="quick-sale-item-title">ELLERY X
+            <span class="card-title">ELLERY X
                 M'O CAPSULE</span>
-            <span class="quick-sale-item-description">Known for her sculptural takes on traditional tailoring,
+            <span class="card-description">Known for her sculptural takes on traditional tailoring,
                 Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
-            <span class="quick-sale-item-price">$52.00</span>
+            <span class="card-price">$52.00</span>
         </div>
-        <div class="quick-sale-item">
-            <a href="#" class="quick-sale-item-img" style="background-image: url(./img/featured-rigth-down.png);"><img
-                    src="./img/Add to cart.png" class="add-to-cart" alt="добавить в корзину"></a>
+        <div class="card">
+            <a href="#" class="card-img" style="background-image: url(../img/item/featured-rigth-down.png);"><img
+                    src="../img/item/Add to cart.png" class="add-to-cart" alt="добавить в корзину"></a>
 
-            <span class="quick-sale-item-title">ELLERY X M'O CAPSULE</span>
-            <span class="quick-sale-item-description">Known for her sculptural takes on traditional tailoring,
+            <span class="card-title">ELLERY X M'O CAPSULE</span>
+            <span class="card-description">Known for her sculptural takes on traditional tailoring,
                 Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
-            <span class="quick-sale-item-price">$52.00</span>
+            <span class="card-price">$52.00</span>
         </div>
-        <div class="quick-sale-item">
-            <a href="#" class="quick-sale-item-img" style="background-image: url(./img/featured-left-up.png)"><img
-                    src="./img/Add to cart.png" class="add-to-cart" alt="добавить в корзину"></a>
-            <span class="quick-sale-item-title">ELLERY X M'O CAPSULE</span>
-            <span class="quick-sale-item-description">Known for her sculptural takes on traditional tailoring,
+        <div class="card">
+            <a href="#" class="card-img" style="background-image: url(../img/item/featured-left-up.png)"><img
+                    src="../img/item/Add to cart.png" class="add-to-cart" alt="добавить в корзину"></a>
+            <span class="card-title">ELLERY X M'O CAPSULE</span>
+            <span class="card-description">Known for her sculptural takes on traditional tailoring,
                 Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
-            <span class="quick-sale-item-price">$52.00</span>
+            <span class="card-price">$52.00</span>
         </div>
-        <div class="quick-sale-item">
-            <a href="#" class="quick-sale-item-img"
-                style="background-image: url(./img/featured-center-up.png);background-color: #F7E4E2;"><img
-                    src="./img/Add to cart.png" class="add-to-cart" alt="добавить в корзину"></a>
+        <div class="card">
+            <a href="#" class="card-img"
+                style="background-image: url(../img/item/featured-center-up.png);background-color: #F7E4E2;"><img
+                    src="../img/item/Add to cart.png" class="add-to-cart" alt="добавить в корзину"></a>
 
-            <span class="quick-sale-item-title">ELLERY X M'O CAPSULE</span>
-            <span class="quick-sale-item-description">Known for her sculptural takes on traditional tailoring,
+            <span class="card-title">ELLERY X M'O CAPSULE</span>
+            <span class="card-description">Known for her sculptural takes on traditional tailoring,
                 Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
-            <span class="quick-sale-item-price">$52.00</span>
+            <span class="card-price">$52.00</span>
         </div>
-        <div class="quick-sale-item">
-            <a href="#" class="quick-sale-item-img" style="background-image: url(./img/featured-rigth-up.png)"><img
-                    src="./img/Add to cart.png" class="add-to-cart" alt="добавить в корзину"></a>
+        <div class="card">
+            <a href="#" class="card-img" style="background-image: url(../img/item/featured-rigth-up.png)"><img
+                    src="../img/item/Add to cart.png" class="add-to-cart" alt="добавить в корзину"></a>
 
-            <span class="quick-sale-item-title">ELLERY X M'O CAPSULE</span>
-            <span class="quick-sale-item-description">Known for her sculptural takes on traditional tailoring,
+            <span class="card-title">ELLERY X M'O CAPSULE</span>
+            <span class="card-description">Known for her sculptural takes on traditional tailoring,
                 Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
-            <span class="quick-sale-item-price">$52.00</span>
+            <span class="card-price">$52.00</span>
         </div>
     </div>
     <nav role="navigation" class="navigation-section">
@@ -183,7 +187,7 @@
                     xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14" fill="none">
                     <path d="M8.99512 2L3.99512 7L8.99512 12L7.99512 14L0.995117 7L7.99512 0L8.99512 2Z" fill="black" />
                 </svg></li>
-            <li type="none" class="nav-number" style="color:#EF5B70;">1</li>
+            <li type="none" class="nav-number-active">1</li>
             <li type="none" class="nav-number">2</li>
             <li type="none" class="nav-number">3</li>
             <li type="none" class="nav-number">4</li>
@@ -203,27 +207,27 @@
 
         <div class="footer-offers">
             <a href="/" class="offer-container">
-                <img src="./img/track.png">
+                <img src="../img/footer/benefits/track.png">
                 <span class="footer-offer-span-title">Free
                     Delivery</span><span class="footer-offer-span-description">Worldwide delivery on all. Authorit
                     tively morph next-generation innov tion with extensive models.</span> </a>
 
             <a href="/" class="offer-container">
-                <img src="./img/discount.png" alt="">
+                <img src="../img/footer/benefits/discount.png" alt="">
                 <span class="footer-offer-span-title">Sales &
                     discounts</span><span class="footer-offer-span-description">Worldwide delivery on all. Authorit
                     tively morph
                     next-generation innov tion with extensive models.</span> </a>
 
             <a href="/" class="offer-container">
-                <img src="./img/crown.png" alt=""><span class="footer-offer-span-title">Quality
+                <img src="../img/footer/benefits/crown.png" alt=""><span class="footer-offer-span-title">Quality
                     assurance</span><span class="footer-offer-span-description">Worldwide delivery on all. Authorit
                     tively morph next-generation innov tion with extensive models.</span> </a>
         </div>
         <div class="subscribe">
-            <img src="./img/Layer 41.png" class="bg-img">
+            <img src="../img/footer/subscribe/surfing.png" class="bg-img">
             <div class="subscribe-rating">
-                <img src="./img/Intersect.png" alt="">
+                <img src="../img/footer/subscribe/Intersect.png" alt="">
                 <span class="subscribe-rating-span">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
                     purus condimentum“</span>
             </div>
@@ -242,10 +246,10 @@
 
 
             <div class="contacts-link-container">
-                <a href="#" class="contact-link"><img src="./img/facebook-f-brands (3) 1.svg"></a>
-                <a href="#" class="contact-link"><img src="./img/instagram-brands 1.svg"></a>
-                <a href="#" class="contact-link"><img src="./img/pinterest-p-brands 1.svg"></a>
-                <a href="#" class="contact-link"><img src="./img/twitter-brands 1.svg"></a>
+                <a href="#" class="contact-link"><img src="../img/footer/footer/facebook-f-brands (3) 1.svg"></a>
+                <a href="#" class="contact-link"><img src="../img/footer/footer/instagram-brands 1.svg"></a>
+                <a href="#" class="contact-link"><img src="../img/footer/footer/pinterest-p-brands 1.svg"></a>
+                <a href="#" class="contact-link"><img src="../img/footer/footer/twitter-brands 1.svg"></a>
             </div>
         </div>
         </div>

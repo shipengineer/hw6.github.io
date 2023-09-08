@@ -1,0 +1,6 @@
+@mixin flex__position-center($row-colomn) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $row-colomn;
+}

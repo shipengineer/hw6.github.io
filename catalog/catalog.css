@@ -3,6 +3,10 @@ html {
   overflow-x: hidden;
 }
 
+a:visited {
+  color: #000;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -34,9 +38,18 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  background-color: #222;
+  background-color: #000;
   height: 75px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   justify-content: space-between;
+  width: 1140px;
+  max-width: 1140px;
 }
 
 .logo {
@@ -44,21 +57,18 @@ header {
   display: inline-block;
   height: 38px;
   width: 44px;
-  background-image: url(./img/logo.png);
 }
 
 .search-button {
   height: 27px;
   width: 26px;
   margin-left: 85px;
-  background-image: url(./img/search-icon.svg);
 }
 
 .burger {
   background-color: transparent;
   height: 23px;
   width: 32px;
-  background-image: url(./img/burger.png);
   background-size: cover;
 }
 
@@ -66,7 +76,6 @@ header {
   margin-left: 25px;
   height: 29px;
   width: 29px;
-  background-image: url(./img/user.png);
 }
 
 .cart-page {
@@ -74,108 +83,6 @@ header {
   margin-right: 41px;
   height: 29px;
   width: 32px;
-  background-image: url(./img/cart.png);
-}
-
-/* next one */
-.info-ad {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  width: 100%;
-  height: 764px;
-  background-color: #f1e4e6;
-}
-
-.info-ad > img {
-  max-height: 764px;
-}
-
-.info-ad > span {
-  padding-left: 16px;
-  border-left: 12px solid #f16d7f;
-}
-
-span > h1 {
-  color: #222;
-  font-family: Lato;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: normal;
-}
-
-span > h2 {
-  font-family: Lato;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  color: #222;
-  font-size: 32px;
-}
-
-.threads {
-  margin-top: 65px;
-  max-width: 1140px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
-}
-
-.threads-item-img,
-.down-one {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: rgba(33, 22, 22, 0.7);
-  background-blend-mode: overlay;
-  width: 360px;
-  height: 260px;
-  text-decoration: none;
-}
-
-.down-one {
-  width: 1140px;
-  height: 180px;
-}
-
-.threads-item-title {
-  color: #fff;
-  text-align: center;
-  font-size: 16px;
-}
-
-.threads-item-description {
-  font-family: Lato;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  color: #f16d7f;
-}
-
-.fetured {
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-top: 96px;
-  color: #222;
-  font-size: 30px;
-}
-
-.fetured-describe {
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-top: 6px;
-  color: #9f9f9f;
-  font-size: 14px;
 }
 
 .quick-sale {
@@ -189,16 +96,17 @@ span > h2 {
   gap: 30px;
 }
 
-.quick-sale-item {
+.card {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  align-items: flex-start;
   width: 360px;
   background-color: #f8f8f8;
 }
 
-.quick-sale-item-img {
+.card-img {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -215,17 +123,18 @@ span > h2 {
   justify-self: center;
 }
 
-.quick-sale-item-img:hover {
+.card-img:hover {
   background-color: rgba(58, 56, 56, 0.86);
   background-blend-mode: overlay;
 }
 
-.quick-sale-item-img:hover .add-to-cart {
+.card-img:hover .add-to-cart {
   display: block;
 }
 
-.quick-sale-item-title {
+.card-title {
   font-family: Lato;
+  font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -234,7 +143,7 @@ span > h2 {
   font-size: 13px;
 }
 
-.quick-sale-item-description {
+.card-description {
   margin: 0px 16px 16px 16px;
   color: #5d5d5d;
   font-family: Lato;
@@ -244,82 +153,16 @@ span > h2 {
   line-height: normal;
 }
 
-.quick-sale-item-price {
+.card-price {
   font-family: Lato;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   margin: 0px 16px 24px 16px;
   color: #f16d7f;
-  font-size: 16px;
 }
 
-.catalog-link {
-  margin-top: 48px;
-  margin-bottom: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 212px;
-  height: 48px;
-  border: 1px solid #ff6a6a;
-  /* fonts */
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  color: #f26376;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-@media (max-width: 1025px) {
-  .threads-item-img {
-    width: 318px;
-  }
-  .down-one {
-    width: 100%;
-  }
-}
-@media (max-width: 1025px) {
-  html {
-    overflow-x: hidden;
-  }
-  header {
-    width: 100%;
-  }
-  .info-ad {
-    height: 384px;
-    width: 100%;
-  }
-  .info-ad > img {
-    width: 250px;
-  }
-  .threads {
-    margin: 20px 0px 0px;
-    margin-top: 20px;
-    justify-content: space-around;
-  }
-  .threads-item-img {
-    width: 340px;
-  }
-  .down-one {
-    width: 360px;
-    height: 260px;
-    background-size: cover;
-  }
-  .quick-sale {
-    gap: 10px;
-    justify-content: space-around;
-  }
-  .quick-sale-item,
-  .quick-sale-item-img {
-    width: 350px;
-  }
-  .fetured {
-    margin-top: 20px;
-  }
-}
 .footer-offers {
   display: flex;
   align-items: center;
@@ -327,7 +170,7 @@ span > h2 {
   flex-direction: row;
   width: 100vw;
   height: 341px;
-  background-color: black;
+  background-color: #000;
 }
 
 .offer-container {
@@ -341,20 +184,20 @@ span > h2 {
 
 .footer-offer-span-title {
   font-family: Lato;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   color: #fbfbfb;
-  font-size: 19.96px;
   text-decoration: none;
 }
 
 .footer-offer-span-description {
   font-family: Lato;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  font-size: 14px;
   width: 360px;
   color: #fbfbfb;
   text-align: center;
@@ -362,7 +205,7 @@ span > h2 {
 
 .footer-contacts {
   height: 79px;
-  background-color: #222224;
+  background-color: #000;
 }
 
 .bg-img {
@@ -385,12 +228,12 @@ span > h2 {
 
 .subscribe-rating-span {
   font-family: Lato;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  font-size: 20px;
   width: 360px;
-  color: #222224;
+  color: #000;
   text-align: center;
 }
 
@@ -408,23 +251,27 @@ span > h2 {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  color: #222224;
+  color: #000;
   text-align: center;
   line-height: 167.2%; /* 40.128px */
 }
 
 .subscribe-field-description {
   font-family: Lato;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  color: #222224;
-  font-family: Lato;
-  font-size: 18px;
+  color: #000;
   line-height: 167.2%;
 }
 
 .subscribe-field-form {
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   background-color: #e1e1e1;
   display: flex;
   border-radius: 24px;
@@ -434,6 +281,11 @@ span > h2 {
 }
 
 .subscribe-field-form > input {
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   background-color: transparent;
   border: none;
   padding-left: 22px;
@@ -441,12 +293,12 @@ span > h2 {
 
 .subscribe-field-button {
   font-family: Lato;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   color: #fff;
   text-align: center;
-  font-size: 14px;
   width: 100px;
   background-color: #f16d7f;
   border-top-right-radius: 24px;
@@ -454,7 +306,7 @@ span > h2 {
 }
 
 .contact-link {
-  width: 31.451px;
+  width: 32px;
   height: 32px;
   background-color: #fff;
 }
@@ -470,12 +322,11 @@ span > h2 {
 
 .rigths {
   font-family: Lato;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   color: #fbfbfb;
-  font-family: Lato;
-  font-size: 16px;
 }
 
 .contacts-link-container {
@@ -493,91 +344,6 @@ span > h2 {
   flex-direction: column;
 }
 
-@media (max-width: 426px) {
-  header {
-    width: 100%;
-    justify-content: space-around;
-  }
-  .logo {
-    margin-left: 16px;
-  }
-  .burger {
-    margin-right: 16px;
-  }
-  .search-button {
-    margin-left: 41px;
-  }
-  .user-page {
-    display: none;
-  }
-  .cart-page {
-    display: none;
-  }
-  .info-ad {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 363px;
-  }
-  span > h1 {
-    color: #222;
-    font-family: Lato;
-    font-size: 38px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-  }
-  span > h2 {
-    font-family: Lato;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    color: #222;
-    font-size: 20px;
-  }
-  .info-ad > span {
-    padding-left: 15px;
-  }
-  .info-ad > img {
-    display: none;
-  }
-  .threads {
-    margin-top: 64px;
-  }
-  .threads-item-img {
-    width: 343px;
-    height: 247px;
-  }
-  .down-one {
-    width: 343px;
-    height: 111px;
-    background-position: center;
-  }
-  .fetured {
-    margin-top: 64px;
-  }
-  .quick-sale {
-    margin-top: 64px;
-  }
-  .subscribe {
-    margin-top: 100px;
-    flex-direction: column;
-  }
-  .footer-offer-span-description {
-    width: 360px;
-  }
-  .footer-offers {
-    height: 400px;
-    flex-direction: column;
-  }
-  .subscribe-rating-span {
-    width: 40%;
-  }
-  input {
-    margin-top: 50px;
-  }
-}
 .top-navigation {
   height: 148px;
   width: 1140px;
@@ -588,22 +354,23 @@ span > h2 {
 
 .category-name {
   font-family: Lato;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   color: #f16d7f;
-  font-size: 24px;
   width: 194px;
-} 
+}
+
 .breadcrumbs {
   font-family: Lato;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   display: flex;
   flex-direction: row;
   color: #6f6e6e;
-  font-size: 14px;
 }
 
 .breadcrumbs > a {
@@ -616,21 +383,25 @@ span > h2 {
 
 .filter {
   font-family: Lato;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  display: flex;
   width: 1140px;
+  display: flex;
   align-items: start;
   height: 1rem;
   color: #6f6e6e;
-  font-size: 14px;
   padding-top: 39px;
 }
 
 .filter__button-abc {
-  margin-right: 320px;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
   font-weight: 600;
+  line-height: normal;
+  margin-right: 320px;
   color: #6f6e6e;
 }
 
@@ -656,11 +427,11 @@ span > h2 {
 
 .filter-button {
   font-family: Lato;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
   color: #6f6e6e;
-  font-weight: 600;
   cursor: pointer;
 }
 
@@ -670,10 +441,10 @@ span > h2 {
 
 .secondary-category {
   font-family: Lato;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  font-size: 14px;
   color: #6f6e6e;
   margin: 11px 0px 11px 17px;
 }
@@ -684,25 +455,25 @@ span > h2 {
   justify-content: center;
   flex-direction: row;
   font-family: Lato;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  justify-content: flex-start;
-  padding-left: 11px;
   height: 37px;
-  color: #ef5b70;
   padding-left: 11px;
+  margin-top: 24px;
+  justify-content: flex-start;
+  color: #ef5b70;
   border-left: 5px solid #ef5b70;
   border-bottom: 1px solid #ebebeb;
-  margin-top: 24px;
 }
 
 .filter__category {
   font-family: Lato;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  font-size: 14px;
   margin-right: 28px;
   cursor: pointer;
 }
@@ -769,23 +540,29 @@ span > h2 {
 }
 
 .custom-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: coloumn;
   width: auto;
   max-width: none;
-  display: inline-block;
   border-radius: 0.25em;
-  align-items: center;
 }
 
 .nav-number {
   padding: 15px 0px 15px 0px;
   width: 43px;
-  color: #c4c4c4;
   font-family: Lato;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  color: #c4c4c4;
   marker-start: none;
   margin: 0;
   float: left;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.nav-number-active {
+  color: #f16d7f;
+}/*# sourceMappingURL=catalog.css.map */
