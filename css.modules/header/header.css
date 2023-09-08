@@ -1,9 +1,9 @@
 header {
+  display: grid;
+  justify-content: normal;
+  position: sticky;
+  top: 0px;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
   background-color: #000;
   height: 75px;
 }
@@ -13,6 +13,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  justify-self: center;
   justify-content: space-between;
   width: 1140px;
   max-width: 1140px;
@@ -31,11 +32,16 @@ header {
   margin-left: 85px;
 }
 
-.burger {
+.check-menu {
   background-color: transparent;
   height: 23px;
   width: 32px;
+  margin-right: 25px;
   background-size: cover;
+}
+
+#toggle:checked ~ .info-ad {
+  background-color: aqua;
 }
 
 .user-page {

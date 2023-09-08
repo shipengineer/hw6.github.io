@@ -1,6 +1,7 @@
 @import '../css.modules/zero-style/zero-style.scss';
 @import '../css.modules/modificators/modificators.scss';
 @import '../css.modules/main-colors/main-colors.scss';
+@import '../css.modules/side-menu/side-menu.scss';
 @import '../css.modules/header/header.scss';
 @import '../css.modules/item/item.scss';
 @import '../css.modules/footer/footer.scss';
@@ -56,9 +57,9 @@ span > h2 {
 }
 
 .threads-item-title {
+  @include Lato(16px, 700);
   color: $main-background;
   text-align: center;
-  font-size: 16px;
 }
 
 .threads-item-description {
