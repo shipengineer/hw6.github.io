@@ -1,0 +1,47 @@
+@import '../modificators/modificators.scss';
+@import '../main-colors/main-colors.scss';
+
+header {
+  width: 100%;
+  @include flex__position-center(row);
+  background-color: $secondary-background;
+  height: 75px;
+}
+.header-container {
+  @include flex__position-center(row);
+  justify-content: space-between;
+  width: 1140px;
+  max-width: 1140px;
+}
+.logo {
+  margin-left: 32px;
+  display: inline-block;
+  height: 38px;
+  width: 44px;
+}
+
+.search-button {
+  height: 27px;
+  width: 26px;
+  margin-left: 85px;
+}
+
+.burger {
+  background-color: transparent;
+  height: 23px;
+  width: 32px;
+  background-size: cover;
+}
+
+.user-page {
+  margin-left: 25px;
+  height: 29px;
+  width: 29px;
+}
+
+.cart-page {
+  margin-left: 42px;
+  margin-right: 41px;
+  height: 29px;
+  width: 32px;
+}

@@ -1,0 +1,156 @@
+@import '../css.modules/zero-style/zero-style.scss';
+@import '../css.modules/modificators/modificators.scss';
+@import '../css.modules/main-colors/main-colors.scss';
+@import '../css.modules/header/header.scss';
+@import '../css.modules/item/item.scss';
+@import '../css.modules/footer/footer.scss';
+
+.top-navigation {
+  height: 148px;
+  width: 1140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.category-name {
+  @include Lato(24px, 400);
+  color: $primary;
+  width: 194px;
+}
+.breadcrumbs {
+  @include Lato(14px, 400);
+  display: flex;
+  flex-direction: row;
+  color: $filter-main;
+}
+.breadcrumbs > a {
+  text-decoration: none;
+}
+.breadcrumbs_link:not(:last-child)::after {
+  content: '\/';
+}
+.filter {
+  @include Lato(14px, 400);
+  width: 1140px;
+  display: flex;
+  align-items: start;
+  height: 1rem;
+  color: $filter-main;
+  padding-top: 39px;
+}
+.filter__button-abc {
+  @include Lato(14px, 600);
+  margin-right: 320px;
+  color: $filter-main;
+}
+.filter-button > svg {
+  fill: $filter-main;
+}
+.filter [open] {
+  .filter-button {
+    color: $filter-secondary;
+  }
+  margin-right: 0px;
+  width: 360px;
+  .filter-button > svg {
+    fill: $filter-secondary;
+  }
+  position: relative;
+  z-index: 3;
+  background-color: $main-background;
+  padding: 17px;
+  filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
+}
+.filter-button {
+  @include Lato(14px, 600);
+  color: $filter-main;
+  cursor: pointer;
+}
+.filter-button::marker {
+  content: '';
+}
+.secondary-category {
+  @include Lato(14px, 400);
+  color: $filter-main;
+  margin: 11px 0px 11px 17px;
+}
+.main-category {
+  @include flex__position-center(row);
+  @include Lato(14px, 400);
+  height: 37px;
+  padding-left: 11px;
+  margin-top: 24px;
+  justify-content: flex-start;
+  color: $filter-secondary;
+  border-left: 5px solid $filter-secondary;
+  border-bottom: 1px solid #ebebeb;
+}
+.filter__category {
+  @include Lato(14px, 400);
+  margin-right: 28px;
+  cursor: pointer;
+}
+.filter-parametr [open] {
+  @include flex__position-center(column);
+}
+.filter__category--element::marker {
+  content: '';
+}
+.filter__category--element::after {
+  content: url('./img/Vector.svg');
+  margin-left: 10px;
+}
+.filter__category:hover {
+  color: $filter-secondary;
+}
+.filter__category > img {
+  margin-left: 10px;
+}
+.filter-parametr {
+  @include flex__position-center(row);
+  align-items: flex-start;
+}
+.filter-parametr::marker {
+  content: '';
+}
+
+.filter__category__rigth {
+  cursor: pointer;
+  margin-right: 28px;
+}
+.filter-parametr [open] {
+  background-color: $main-background;
+  position: relative;
+  z-index: 3;
+  width: max-content;
+  padding: 9px;
+}
+.filter-parametr:first-child {
+  background-color: transparent;
+}
+
+// pagination
+.navigation-section {
+  margin-top: 48px;
+  margin-bottom: 96px;
+  text-align: center;
+  border: 1px solid $pagination-section;
+}
+.custom-navigation {
+  @include flex__position-center(coloumn);
+  width: auto;
+  max-width: none;
+  border-radius: 0.25em;
+}
+.nav-number {
+  padding: 15px 0px 15px 0px;
+  width: 43px;
+  @include Lato(16px, 300);
+  color: $pagination-number;
+  marker-start: none;
+  margin: 0;
+  float: left;
+}
+.nav-number-active {
+  color: $primary;
+}

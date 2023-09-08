@@ -1,0 +1,7 @@
+@mixin Lato($size, $weight) {
+  font-family: Lato;
+  font-size: $size;
+  font-style: normal;
+  font-weight: $weight;
+  line-height: normal;
+}

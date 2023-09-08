@@ -1,0 +1,49 @@
+@import '../modificators/modificators.scss';
+@import '../main-colors/main-colors.scss';
+@import '../fonts/fonts.scss';
+
+@media (max-width: 1025px) {
+  .threads-item-img {
+    width: 318px;
+  }
+  .down-one {
+    width: 100%;
+  }
+  html {
+    overflow-x: hidden;
+  }
+  header {
+    width: 100%;
+  }
+  .info-ad {
+    height: 384px;
+    width: 100%;
+  }
+  .info-ad > img {
+    width: 250px;
+  }
+  .threads {
+    margin: 20px 0px 0px;
+    margin-top: 20px;
+    justify-content: space-around;
+  }
+  .threads-item-img {
+    width: 340px;
+  }
+  .down-one {
+    width: 360px;
+    height: 260px;
+    background-size: cover;
+  }
+  .quick-sale {
+    gap: 10px;
+    justify-content: space-around;
+  }
+  .quick-sale-item,
+  .quick-sale-item-img {
+    width: 350px;
+  }
+  .fetured {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,128 @@
+@import '../modificators/modificators.scss';
+@import '../main-colors/main-colors.scss';
+@import '../fonts/fonts.scss';
+.footer-offers {
+  @include flex__position-center(row);
+  width: 100vw;
+  height: 341px;
+  background-color: $secondary-background;
+}
+
+.offer-container {
+  @include flex__position-center(column);
+  text-decoration: none;
+  gap: 16px;
+}
+
+.footer-offer-span-title {
+  @include Lato(20px, 400);
+  color: $benefit-title;
+  text-decoration: none;
+}
+
+.footer-offer-span-description {
+  @include Lato(14px, 400);
+  width: 360px;
+  color: $benefit-title;
+  text-align: center;
+}
+
+.footer-contacts {
+  height: 79px;
+  background-color: $secondary-background;
+}
+
+.bg-img {
+  overflow-x: hidden;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.7;
+  width: 100%;
+}
+
+.subscribe {
+  @include flex__position-center(row);
+  gap: 223px;
+  height: 448px;
+  background-size: cover;
+}
+
+.subscribe-rating-span {
+  @include Lato(20px, 400);
+
+  width: 360px;
+  color: $secondary-background;
+  text-align: center;
+}
+
+.subscribe-rating,
+.subscribe-field {
+  @include flex__position-center(column);
+}
+
+.subscribe-field-title {
+  @include Lato(24px, 700);
+  color: $secondary-background;
+  text-align: center;
+  line-height: 167.2%; /* 40.128px */
+}
+
+.subscribe-field-description {
+  @include Lato(18px, 400);
+  color: $secondary-background;
+
+  line-height: 167.2%;
+}
+
+.subscribe-field-form {
+  @include Lato(14px, 400);
+  background-color: #e1e1e1;
+  display: flex;
+  border-radius: 24px;
+  margin-top: 32px;
+  width: 256px;
+  height: 49px;
+}
+
+.subscribe-field-form > input {
+  @include Lato(14px, 400);
+  background-color: transparent;
+  border: none;
+  padding-left: 22px;
+}
+
+.subscribe-field-button {
+  @include Lato(14px, 400);
+  color: $main-background;
+  text-align: center;
+  width: 100px;
+  background-color: $primary;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.contact-link {
+  width: 32px;
+  height: 32px;
+  background-color: $main-background;
+}
+
+.footer-contacts {
+  @include flex__position-center(row);
+  height: 79px;
+  gap: 655px;
+}
+
+.rigths {
+  @include Lato(16px, 400);
+  color: $benefit-title;
+}
+
+.contacts-link-container {
+  @include flex__position-center(row);
+  gap: 8px;
+}
+
+.contact-link {
+  @include flex__position-center(column);
+}
