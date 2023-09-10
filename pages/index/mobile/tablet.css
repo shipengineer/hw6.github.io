@@ -1,7 +1,3 @@
-@import '../modificators/modificators.scss';
-@import '../main-colors/main-colors.scss';
-@import '../fonts/fonts.scss';
-
 @media (max-width: 1025px) {
   .threads-item-img {
     width: 318px;
@@ -46,4 +42,21 @@
   .fetured {
     margin-top: 20px;
   }
-}
+  .footer-offers {
+    flex-wrap: wrap;
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .subscribe {
+    gap: 5px;
+  }
+  .footer-contacts {
+    width: 100%;
+    gap: 0px;
+    justify-content: space-evenly;
+  }
+}/*# sourceMappingURL=tablet.css.map */

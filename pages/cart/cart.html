@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="meta-header">
+        <div class="header-container">
+            <div>
+                <a href="#" class="logo"><img src="../../img/header/logo.png">
+                </a>
+                <button class="search-button">
+                    <img src="../../img/header/search-icon.svg">
+                </button>
+            </div>
+            <div>
+                <label for="toggle" class="burger-img"><img src="../../img/header/burger.png"></label>
+                <input type="checkbox" id="toggle" class="check-menu">
+                </input>
+                <nav class="side-menu">
+                    <label for="toggle" class="side-menu__close-button"><img src="../../img/close-button.svg"></label>
+                    <span class="side-menu__title">MENU</span>
+                    <span class="side-menu__subtitle">
+                        MAN
+                    </span>
+                    <a href="#" class="side-menu__subtitle__category">Accessories</a>
+                    <a href="#" class="side-menu__subtitle__category">Bags</a>
+                    <a href="#" class="side-menu__subtitle__category">Denim</a>
+                    <a href="#" class="side-menu__subtitle__category">T-Shirts</a>
+                    <span class="side-menu__subtitle">
+                        WOMAN
+                    </span>
+                    <a href="#" class="side-menu__subtitle__category">Accessories</a>
+                    <a href="#" class="side-menu__subtitle__category">Jackets & Coats</a>
+                    <a href="#" class="side-menu__subtitle__category"> Polos</a>
+                    <a href="#" class="side-menu__subtitle__category">T-Shirts</a>
+                    <a href="#" class="side-menu__subtitle__category">Shirts</a>
+
+                    <span class="side-menu__subtitle">
+                        KIDS
+                    </span>
+                    <a href="#" class="side-menu__subtitle__category">Accessories</a>
+                    <a href="#" class="side-menu__subtitle__category">Jackets & Coats</a>
+                    <a href="#" class="side-menu__subtitle__category">Polos</a>
+                    <a href="#" class="side-menu__subtitle__category">T-Shirts</a>
+                    <a href="#" class="side-menu__subtitle__category">Shirts</a>
+                    <a href="#" class="side-menu__subtitle__category">Bags</a>
+
+                </nav>
+                <a href="#" class="user-page"><img src="../../img/header/user.png"></a>
+                <a href="../cart/cart.html" class="cart-page"><img src="../../img/header/cart.png"></a>
+            </div>
+
+        </div>
+
+
+    </header>
+    <span class="title">
+        SHOPPING CART
+    </span>
+    <div class="cart-container">
+        <div class="product-container">
+            <div class="product">
+                <img src="../../img/item/featured-left-up.png" class="product-img        ">
+                <div class="product-about">
+                    <a href="#" class="product-title">MANGO PEOPLE T-SHIRT</a>
+                    <span class="product-description">Price: <span class="product-price-amount">300</span>
+                    </span>
+                    <span class="product-description">Color: <span class="product-color">Red</span>
+                    </span>
+                    <span class="product-description">Size: <span class="product-size">XL</span>
+                    </span>
+                    <span class="product-description">Quantity:<span class="product-quantity">2</span>
+                    </span>
+                </div>
+                <button class="delete-product"><img src="../../img/close-button.svg"></button>
+            </div>
+            <div class="product">
+                <img src="../../img/item/featured-left-up.png" class="product-img">
+                <div class="product-about">
+                    <a href="#" class="product-title">MANGO PEOPLE T-SHIRT</a>
+                    <span class="product-description">Price: <span class="product-price-amount">300</span>
+                    </span>
+                    <span class="product-description">Color: <span class="product-color">Red</span>
+                    </span>
+                    <span class="product-description">Size: <span class="product-size">XL</span>
+                    </span>
+                    <span class="product-description">Quantity:<span class="product-quantity">2</span>
+                    </span>
+                </div>
+                <button class="delete-product"><img src="../../img/close-button.svg"></button>
+            </div>
+        </div>
+        <div class="purchase">
+            <form action="" method="post" class="purchase-form">
+                <span class="span-text">SHIPPING ADRESS</span>
+                <input type="text" name="Country" id="country" placeholder="Your country" class="input-text">
+                <input type="text" name="State" id="state" placeholder="Your state" class="input-text">
+                <input type="text" name="Postcode" id="zip" placeholder="Your zip" class="input-text">
+                <button type="submit" class="purchase-button">GET A QUOTE</button>
+            </form>
+            <div class="purchase-total">
+                <span class="sub-total"><span class="sub-total__amount">900</span></span>
+                <span class="grand-total"><span class="grand-total__amount">900</span></span>
+                <button class="proceed"> PROCCED TO CHECKOUT</button>
+            </div>
+        </div>
+        <button class="clear-button"> CLEAR SHOPPING CART</button>
+        <button class="continue-button"> CONTINUE SHOPPING</button>
+    </div>
+    </div>
+
+    <footer>
+
+        <div class="footer-offers">
+            <a href="/" class="offer-container">
+                <img src="../../img/footer/benefits/track.png">
+                <span class="footer-offer-span-title">Free
+                    Delivery</span><span class="footer-offer-span-description">Worldwide delivery on all. Authorit
+                    tively morph next-generation innov tion with extensive models.</span> </a>
+
+            <a href="/" class="offer-container">
+                <img src="../../img/footer/benefits/discount.png">
+                <span class="footer-offer-span-title">Sales &
+                    discounts</span><span class="footer-offer-span-description">Worldwide delivery on all. Authorit
+                    tively morph
+                    next-generation innov tion with extensive models.</span> </a>
+
+            <a href="/" class="offer-container">
+                <img src="../../img/footer/benefits/crown.png"><span class="footer-offer-span-title">Quality
+                    assurance</span><span class="footer-offer-span-description">Worldwide delivery on all. Authorit
+                    tively morph next-generation innov tion with extensive models.</span> </a>
+        </div>
+        <div class="subscribe">
+            <img src="../../img/footer/subscribe/surfing.png" class="bg-img">
+            <div class="subscribe-rating">
+                <img src="../../img/footer/subscribe/Intersect.png">
+                <span class="subscribe-rating-span">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,<p
+                        style="font-style: italic;">
+                        a pulvinar
+                        purus condimentum“</p></span>
+            </div>
+            <div class="subscribe-field">
+                <span class="subscribe-field-title">SUBSCRIBE</span>
+                <span class="subscribe-field-description">FOR OUR NEWLETTER AND PROMOTION</span>
+                <form action="/index.html" method="post" class="subscribe-field-form">
+                    <input type="email" placeholder="Enter Your Email">
+                    <button class="subscribe-field-button">Subscribe</button>
+
+                </form>
+            </div>
+        </div>
+        <div class="footer-contacts">
+            <span class="rigths">© 2022 Brand All Rights Reserved.</span>
+
+
+            <div class="contacts-link-container">
+                <a href="#" class="contact-link"><img src="../../img/footer/footer/facebook-f-brands (3) 1.svg"></a>
+                <a href="#" class="contact-link"><img src="../../img/footer/footer/instagram-brands 1.svg"></a>
+                <a href="#" class="contact-link"><img src="../../img/footer/footer/pinterest-p-brands 1.svg"></a>
+                <a href="#" class="contact-link"><img src="../../img/footer/footer/twitter-brands 1.svg"></a>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>
