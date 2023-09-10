@@ -1,11 +1,15 @@
-@import '../modificators/modificators.scss';
-@import '../main-colors/main-colors.scss';
-@import '../fonts/fonts.scss';
+@import '../../../css.modules/modificators/modificators.scss';
+@import '../../../css.modules/main-colors/main-colors.scss';
+@import '../../../css.modules/fonts/fonts.scss';
 
 @media (max-width: 426px) {
-  header {
+  .meta-header {
     width: 100%;
     justify-content: space-around;
+    position: relative;
+  }
+  .header-container {
+    width: 200%;
   }
   .logo {
     margin-left: 16px;
@@ -30,7 +34,7 @@
   }
   span > h1 {
     @include Lato(38px, 900);
-    color: $secondary-background;
+    color: $secondary;
   }
   span > h2 {
     @include Lato(20px, 700);
@@ -63,6 +67,8 @@
   .subscribe {
     margin-top: 100px;
     flex-direction: column;
+    gap: 5px;
+    background-color: $secondary;
   }
   .footer-offer-span-description {
     width: 360px;
@@ -76,5 +82,12 @@
   }
   input {
     margin-top: 50px;
+  }
+  .footer-contacts {
+    gap: 5px;
+    flex-direction: column;
+  }
+  .subscribe-field-form {
+    margin: 0px;
   }
 }
