@@ -4,20 +4,30 @@
 @import '../../css.modules/header/header.scss';
 @import '../../css.modules/fonts/fonts.scss';
 
+button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  background-color: $primary;
+}
+.title-container {
+  @include flex__position-center(row);
+  width: 100%;
+  background-color: $secondary;
+  margin-bottom: 96px;
+  height: 148px;
+}
 .title {
   @include Lato(24px, 400);
-  @include flex__position-center(row);
-  background-color: $secondary;
   color: $primary;
-  width: 100%;
-  height: 148px;
-  margin-bottom: 96px;
+  width: 1140px;
 }
 .cart-container {
   display: flex;
   gap: 128px;
+  row-gap: 72px;
   flex-wrap: wrap;
   width: 1140px;
+  margin-bottom: 122px;
 }
 .span-text {
   @include Lato(16px, 300);
@@ -156,6 +166,13 @@
     margin-top: 17px;
     margin-right: 43px;
   }
+}
+.clear-button,
+.continue-button {
+  @include Lato(14px, 300);
+  width: 235px;
+  height: 50px;
+  border: 1px solid #a4a4a4;
 }
 
 @import '../../css.modules/item/item.scss';
