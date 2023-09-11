@@ -90,6 +90,7 @@ header {
   justify-content: normal;
   position: sticky;
   top: 0px;
+  z-index: 99;
   width: 100%;
   background-color: #000;
   height: 75px;
