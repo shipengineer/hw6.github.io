@@ -136,11 +136,13 @@ header {
 #toggle:not(:checked) ~ .side-menu {
   animation-duration: 2s;
   animation-name: slide-out;
+  animation-fill-mode: forwards;
 }
 
 #toggle:checked ~ .side-menu {
   animation: slide-in 1s;
   left: calc(50vw + 570px);
+  animation-fill-mode: forwards;
 }
 
 @keyframes slide-in {
@@ -155,13 +157,13 @@ header {
     left: calc(50vw + 570px);
   }
   100% {
-    display: block;
+    display: flex;
     left: calc(50vw + 570px);
   }
 }
 @keyframes slide-out {
   0% {
-    display: block;
+    display: flex;
     left: calc(50vw + 570px);
   }
   50% {
