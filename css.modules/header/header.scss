@@ -61,13 +61,13 @@ header {
     left: calc(50vw + 1140px / 2);
   }
   100% {
-    display: flex;
+    display: block;
     left: calc(50vw + 1140px / 2);
   }
 }
 @keyframes slide-out {
   0% {
-    display: flex;
+    display: block;
     left: calc(50vw + 1140px / 2);
   }
   50% {

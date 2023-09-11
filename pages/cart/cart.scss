@@ -82,6 +82,12 @@ button:hover {
     top: 28px;
   }
 }
+.product-quantity {
+  @include Lato(18px, 400);
+  width: 44px;
+  border: 1px solid #a4a4a4;
+  text-align: center;
+}
 .purchase {
   @include flex__position-center(column);
   justify-content: flex-start;
@@ -99,7 +105,6 @@ button:hover {
     @include Lato(13px, 400);
     display: flex;
     align-items: flex-start;
-    width: 360px;
     height: 45px;
     padding: 13px 0px 16px 18px;
     border: 1px solid #a4a4a4;

@@ -39,10 +39,10 @@ button {
   flex-direction: column;
   width: 232px;
   height: 639px;
+  right: 0;
   z-index: 99;
   position: fixed;
   top: 75px;
-  left: 100vw;
   filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
   justify-self: end;
   align-items: flex-start;
@@ -155,13 +155,13 @@ header {
     left: calc(50vw + 570px);
   }
   100% {
-    display: flex;
+    display: block;
     left: calc(50vw + 570px);
   }
 }
 @keyframes slide-out {
   0% {
-    display: flex;
+    display: block;
     left: calc(50vw + 570px);
   }
   50% {

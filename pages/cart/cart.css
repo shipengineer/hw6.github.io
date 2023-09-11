@@ -39,10 +39,10 @@ button {
   flex-direction: column;
   width: 232px;
   height: 639px;
+  right: 0;
   z-index: 99;
   position: fixed;
   top: 75px;
-  left: 100vw;
   filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
   justify-self: end;
   align-items: flex-start;
@@ -155,13 +155,13 @@ header {
     left: calc(50vw + 570px);
   }
   100% {
-    display: flex;
+    display: block;
     left: calc(50vw + 570px);
   }
 }
 @keyframes slide-out {
   0% {
-    display: flex;
+    display: block;
     left: calc(50vw + 570px);
   }
   50% {
@@ -295,6 +295,17 @@ button:hover {
   top: 28px;
 }
 
+.product-quantity {
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 44px;
+  border: 1px solid #a4a4a4;
+  text-align: center;
+}
+
 .purchase {
   display: flex;
   align-items: center;
@@ -320,7 +331,6 @@ button:hover {
   line-height: normal;
   display: flex;
   align-items: flex-start;
-  width: 360px;
   height: 45px;
   padding: 13px 0px 16px 18px;
   border: 1px solid #a4a4a4;
