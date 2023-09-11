@@ -44,10 +44,12 @@ header {
 #toggle:not(:checked) ~ .side-menu {
   animation-duration: 2s;
   animation-name: slide-out;
+  animation-fill-mode: forwards;
 }
 #toggle:checked ~ .side-menu {
   animation: slide-in 1s;
   left: calc(50vw + 1140px / 2);
+  animation-fill-mode: forwards;
 }
 @keyframes slide-in {
   0% {
@@ -61,13 +63,13 @@ header {
     left: calc(50vw + 1140px / 2);
   }
   100% {
-    display: block;
+    display: flex;
     left: calc(50vw + 1140px / 2);
   }
 }
 @keyframes slide-out {
   0% {
-    display: block;
+    display: flex;
     left: calc(50vw + 1140px / 2);
   }
   50% {
