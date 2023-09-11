@@ -6,11 +6,10 @@
   @include flex__position-center(column);
   width: 232px;
   height: 639px;
+  right: 0;
   z-index: 99;
   position: fixed;
   top: 75px;
-  left: 100vw;
-  // left: calc(100vw + 232px);
   filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
   justify-self: end;
   align-items: flex-start;
