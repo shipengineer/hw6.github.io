@@ -23,7 +23,6 @@ button:hover {
   width: 1140px;
 }
 .registration-container {
-  height: 1425px;
   width: 1140px;
   @include flex__position-center(row);
   flex-wrap: wrap;
@@ -69,6 +68,7 @@ button:hover {
     background-color: $primary;
     margin-top: 19px;
     color: #fff;
+    margin-bottom: 96px;
   }
 }
 .perks {
