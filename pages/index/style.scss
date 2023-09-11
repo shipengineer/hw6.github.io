@@ -2,6 +2,29 @@
 @import '../../css.modules/modificators/modificators.scss';
 @import '../../css.modules/main-colors/main-colors.scss';
 @import '../../css.modules/header/header.scss';
+button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  background-color: $primary;
+}
+a:hover {
+  animation: hover 300ms;
+  animation-fill-mode: forwards;
+}
+@keyframes hover {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1.05;
+  }
+  100% {
+    opacity: 1.1;
+    cursor: pointer;
+    background-color: #9f9f9f;
+    background-blend-mode: overlay;
+  }
+}
 
 .info-ad {
   @include flex__position-center(row);

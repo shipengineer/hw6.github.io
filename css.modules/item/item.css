@@ -36,11 +36,6 @@
   justify-self: center;
 }
 
-.card-img:hover {
-  background-color: rgba(58, 56, 56, 0.86);
-  background-blend-mode: overlay;
-}
-
 .card-img:hover .add-to-cart {
   display: block;
 }
