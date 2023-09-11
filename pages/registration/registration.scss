@@ -1,0 +1,98 @@
+@import '../../css.modules/zero-style/zero-style.scss';
+@import '../../css.modules/modificators/modificators.scss';
+@import '../../css.modules/main-colors/main-colors.scss';
+@import '../../css.modules/header/header.scss';
+@import '../../css.modules/fonts/fonts.scss';
+$border-color: #a4a4a4;
+
+button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  background-color: $primary;
+}
+.title-container {
+  @include flex__position-center(row);
+  width: 100%;
+  background-color: $secondary;
+  margin-bottom: 96px;
+  height: 148px;
+}
+.title {
+  @include Lato(24px, 400);
+  color: $primary;
+  width: 1140px;
+}
+.registration-container {
+  height: 1425px;
+  width: 1140px;
+  @include flex__position-center(row);
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 128px;
+}
+.form {
+  width: 360px;
+  @include flex__position-center(column);
+  align-items: flex-start;
+  gap: 20px;
+  &-title {
+    @include Lato(16px, 300);
+  }
+  &-description {
+    @include Lato(13px, 300);
+    color: #b1b1b1;
+    height: 45px;
+    border: 1px solid $border-color;
+    padding-left: 17px;
+    width: 343px;
+  }
+  &-radiobuttons {
+    @include flex__position-center(row);
+    @include Lato(11px, 300);
+    gap: 10px;
+    margin: 14px 0px;
+  }
+  #female {
+    margin-left: 10px;
+  }
+  &-password-helper {
+    @include Lato(13px, 300);
+    color: #b1b1b1;
+    margin-top: -5px;
+  }
+  .button-join {
+    @include flex__position_center(row);
+    @include Lato(14px, 400);
+    gap: 20px;
+    width: 167px;
+    height: 50px;
+    background-color: $primary;
+    margin-top: 19px;
+    color: #fff;
+  }
+}
+.perks {
+  @include Lato(24px, 300);
+  @include flex__position_center(column);
+
+  gap: 21px;
+  align-items: flex-start;
+  width: 652px;
+  &-list {
+    @include flex__position_center(column);
+    align-items: flex-start;
+    gap: 16px;
+    // margin-left: 25px;
+    position: relative;
+    left: 20;
+    &-item {
+      padding-inline-start: 23px;
+    }
+    &-item::marker {
+      content: url(../../img/Vector.svg);
+    }
+  }
+}
+
+@import '../../css.modules/item/item.scss';
+@import '../../css.modules/footer/footer.scss';
