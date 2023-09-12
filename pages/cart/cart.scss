@@ -1,8 +1,8 @@
-@import '../../css.modules/zero-style/zero-style.scss';
-@import '../../css.modules/modificators/modificators.scss';
-@import '../../css.modules/main-colors/main-colors.scss';
-@import '../../css.modules/header/header.scss';
-@import '../../css.modules/fonts/fonts.scss';
+@import '../../css.modules/_zero-style.scss';
+@import '../../css.modules/_modificator.scss';
+@import '../../css.modules/_main-colors.scss';
+@import '../../css.modules/_header.scss';
+@import '../../css.modules/_fonts.scss';
 
 button:hover {
   opacity: 0.7;
@@ -180,5 +180,5 @@ button:hover {
   border: 1px solid #a4a4a4;
 }
 
-@import '../../css.modules/item/item.scss';
-@import '../../css.modules/footer/footer.scss';
+@import '../../css.modules/_item.scss';
+@import '../../css.modules/_footer.scss';

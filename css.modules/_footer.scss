@@ -1,6 +1,6 @@
-@import '../modificators/modificators.scss';
-@import '../main-colors/main-colors.scss';
-@import '../fonts/fonts.scss';
+@import './_modificator.scss';
+@import './_main-colors.scss';
+@import './_fonts.scss';
 .footer-offers {
   @include flex__position-center(row);
   width: 100vw;

@@ -1,51 +1,43 @@
+@import './_modificator.scss';
+@import './_main-colors.scss';
+@import './_fonts.scss';
 .quick-sale {
   max-width: 1140px;
   margin-top: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
+  @include flex__position-center(row);
   flex-wrap: wrap;
   gap: 30px;
 }
-
 .card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  @include flex__position-center(column);
   align-items: flex-start;
   width: 360px;
   background-color: #f8f8f8;
 }
 
 .card-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  @include flex__position-center(column);
   width: 360px;
   height: 420px;
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-color: #f8f8f8;
 }
-
 .add-to-cart {
   display: none;
   justify-self: center;
 }
+// .card-img:hover {
+//   background-color: rgba(58, 56, 56, 0.86);
+//   background-blend-mode: overlay;
+// }
 
 .card-img:hover .add-to-cart {
   display: block;
 }
 
 .card-title {
-  font-family: Lato;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  @include Lato(13px, 400);
   margin: 24px 16px 16px 16px;
   color: #000;
   font-size: 13px;
@@ -62,11 +54,7 @@
 }
 
 .card-price {
-  font-family: Lato;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  @include Lato(16px, 400);
   margin: 0px 16px 24px 16px;
   color: #f16d7f;
-}/*# sourceMappingURL=item.css.map */
+}

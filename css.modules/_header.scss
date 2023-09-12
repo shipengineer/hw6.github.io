@@ -1,6 +1,6 @@
-@import '../modificators/modificators.scss';
-@import '../main-colors/main-colors.scss';
-@import '../side-menu/side-menu.scss';
+@import 'modificator';
+@import 'main-colors';
+@import 'side-menu';
 header {
   display: grid;
   justify-content: normal;

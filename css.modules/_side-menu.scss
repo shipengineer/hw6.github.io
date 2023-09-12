@@ -1,6 +1,6 @@
-@import '../modificators/modificators.scss';
-@import '../main-colors/main-colors.scss';
-@import '../fonts/fonts.scss';
+@import './modificator';
+@import './main-colors';
+@import './fonts';
 
 .side-menu {
   @include flex__position-center(column);
