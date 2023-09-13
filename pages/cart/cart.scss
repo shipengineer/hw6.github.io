@@ -182,3 +182,13 @@ button:hover {
 
 @import '../../css.modules/_item.scss';
 @import '../../css.modules/_footer.scss';
+@import '../index/mobile/_tablet.scss';
+
+@media (width <= 1025px) {
+  .cart-container {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+  }
+}

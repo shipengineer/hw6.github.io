@@ -1,8 +1,8 @@
-@import '../../../css.modules/modificators/modificators.scss';
-@import '../../../css.modules/main-colors/main-colors.scss';
-@import '../../../css.modules/fonts/fonts.scss';
+@import '../../../css.modules/modificator';
+@import '../../../css.modules/main-colors.scss';
+@import '../../../css.modules/fonts.scss';
 
-@media (max-width: 1025px) {
+@media (width <= 1025px) {
   .threads-item-img {
     width: 318px;
   }
@@ -49,15 +49,47 @@
   .footer-offers {
     flex-wrap: wrap;
   }
+  .form {
+    margin-bottom: 112px;
+  }
   footer {
     @include flex__position-center(column);
   }
   .subscribe {
-    gap: 5px;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 48px;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 64px;
+    position: relative;
+  }
+  .bg-img {
+    min-height: 100%;
   }
   .footer-contacts {
     width: 100%;
     gap: 0px;
     justify-content: space-evenly;
+  }
+  .footer-offers {
+    padding: 20px 0px;
+    gap: 20px;
+    height: fit-content;
+  }
+  .cart-container {
+    position: relative;
+    padding-bottom: 576px;
+  }
+  .purchase {
+    position: absolute;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    bottom: 8px;
+    gap: 16px;
+  }
+  .button-container {
+    position: absolute;
+    bottom: 464px;
   }
 }

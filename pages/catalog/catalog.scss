@@ -154,3 +154,18 @@
 .nav-number-active {
   color: $primary;
 }
+
+@media (width <= 1024px) {
+  .filter {
+    align-self: center;
+    width: 100%;
+    padding-left: 20px;
+  }
+  .footer-offers {
+    height: fit-content;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 0;
+  }
+}
+@import '../index/mobile/_tablet.scss';

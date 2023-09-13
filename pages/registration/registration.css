@@ -114,6 +114,10 @@ header {
   width: 44px;
 }
 
+.title-container {
+  padding-left: 16px;
+}
+
 .search-button {
   height: 27px;
   width: 26px;
@@ -184,6 +188,10 @@ header {
   margin-right: 41px;
   height: 29px;
   width: 32px;
+}
+
+html {
+  font-size: 6px;
 }
 
 button:hover {
@@ -298,7 +306,7 @@ button:hover {
 
 .perks {
   font-family: Lato;
-  font-size: 24px;
+  font-size: 4rem;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -327,6 +335,34 @@ button:hover {
   content: url(../../img/Vector.svg);
 }
 
+@media (width <= 1140px) {
+  html {
+    font-size: 4px;
+  }
+  footer {
+    width: 100%;
+  }
+  .registration-container {
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 22px;
+  }
+  .registration-container div {
+    width: 354px;
+  }
+  .form-radiobuttons {
+    justify-content: flex-start;
+  }
+  .form .button-join {
+    margin: 0;
+  }
+  .perks-list-item {
+    margin-left: 20px;
+  }
+  .perks-description {
+    width: 100%;
+  }
+}
 .quick-sale {
   max-width: 1140px;
   margin-top: 48px;
@@ -400,6 +436,12 @@ button:hover {
   color: #f16d7f;
 }
 
+footer {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
 .footer-offers {
   display: flex;
   align-items: center;
@@ -446,21 +488,23 @@ button:hover {
 }
 
 .bg-img {
-  overflow-x: hidden;
-  z-index: -1;
   position: absolute;
+  top: 0;
+  z-index: -1;
   opacity: 0.7;
-  width: 100%;
+  overflow-x: hidden;
+  min-width: 100%;
 }
 
 .subscribe {
+  height: 448px;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   gap: 223px;
   height: 448px;
-  background-size: cover;
 }
 
 .subscribe-rating-span {
@@ -579,4 +623,100 @@ button:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+@media (width <= 1025px) {
+  .threads-item-img {
+    width: 318px;
+  }
+  .down-one {
+    width: 100%;
+  }
+  html {
+    overflow-x: hidden;
+  }
+  header {
+    width: 100%;
+  }
+  .info-ad {
+    height: 384px;
+    width: 100%;
+  }
+  .info-ad > img {
+    width: 250px;
+  }
+  .threads {
+    margin: 20px 0px 0px;
+    margin-top: 20px;
+    justify-content: space-around;
+  }
+  .threads-item-img {
+    width: 340px;
+  }
+  .down-one {
+    width: 360px;
+    height: 260px;
+    background-size: cover;
+  }
+  .quick-sale {
+    gap: 10px;
+    justify-content: space-around;
+  }
+  .quick-sale-item,
+  .quick-sale-item-img {
+    width: 350px;
+  }
+  .fetured {
+    margin-top: 20px;
+  }
+  .footer-offers {
+    flex-wrap: wrap;
+  }
+  .form {
+    margin-bottom: 112px;
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .subscribe {
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 48px;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 64px;
+    position: relative;
+  }
+  .bg-img {
+    min-height: 100%;
+  }
+  .footer-contacts {
+    width: 100%;
+    gap: 0px;
+    justify-content: space-evenly;
+  }
+  .footer-offers {
+    padding: 20px 0px;
+    gap: 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .cart-container {
+    position: relative;
+    padding-bottom: 576px;
+  }
+  .purchase {
+    position: absolute;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    bottom: 8px;
+    gap: 16px;
+  }
+  .button-container {
+    position: absolute;
+    bottom: 464px;
+  }
 }/*# sourceMappingURL=registration.css.map */

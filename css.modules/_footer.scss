@@ -1,6 +1,11 @@
 @import './_modificator.scss';
 @import './_main-colors.scss';
 @import './_fonts.scss';
+footer {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
 .footer-offers {
   @include flex__position-center(row);
   width: 100vw;
@@ -33,18 +38,21 @@
 }
 
 .bg-img {
-  overflow-x: hidden;
-  z-index: -1;
   position: absolute;
+  top: 0;
+  z-index: -1;
   opacity: 0.7;
-  width: 100%;
+  overflow-x: hidden;
+  min-width: 100%;
 }
 
 .subscribe {
+  height: 448px;
+  position: relative;
+
   @include flex__position-center(row);
   gap: 223px;
   height: 448px;
-  background-size: cover;
 }
 
 .subscribe-rating-span {
