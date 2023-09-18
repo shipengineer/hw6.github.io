@@ -7,10 +7,19 @@
         font-size: 8px;
     }
     }
-    .carousel > img{
+    .carousel {
     width: 100%;
     }
+    .carousel > img {
+        width: 75%;
+    }
+    .main-product{
+        &__describe{
+            width: 95%;
+        }
+    }
     .others{
+        flex-direction: column;
         .card:last-child{
             display: none;
         }
