@@ -1,0 +1,18 @@
+@import '../../../css.modules/modificator.scss';
+@import '../../../css.modules/main-colors.scss';
+@import '../../../css.modules/fonts.scss';
+
+@media (width <= 1024px) {
+    html{
+        font-size: 8px;
+    }
+    }
+    .carousel > img{
+    width: 100%;
+    }
+    .others{
+        .card:last-child{
+            display: none;
+        }
+    
+    }
