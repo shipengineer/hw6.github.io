@@ -766,9 +766,9 @@ footer {
   }
   .footer-offer-span-description {
     width: 360px;
+    flex-direction: column;
   }
   .footer-offers {
-    height: 400px;
     flex-direction: column;
   }
   .subscribe-rating-span {
