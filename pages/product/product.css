@@ -991,22 +991,19 @@ a:hover {
   html {
     font-size: 8px;
   }
-}
-.carousel {
-  width: 100%;
-}
-
-.carousel > img {
-  width: 75%;
-}
-
-.main-product__describe {
-  width: 95%;
-}
-
-.others {
-  flex-direction: column;
-}
-.others .card:last-child {
-  display: none;
+  .carousel {
+    width: 100%;
+  }
+  .carousel > img {
+    width: 75%;
+  }
+  .main-product__describe {
+    width: 95%;
+  }
+  .others {
+    flex-direction: column;
+  }
+  .others .card:last-child {
+    display: none;
+  }
 }/*# sourceMappingURL=product.css.map */

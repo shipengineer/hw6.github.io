@@ -6,9 +6,8 @@
     html{
         font-size: 8px;
     }
-    }
     .carousel {
-    width: 100%;
+        width: 100%;
     }
     .carousel > img {
         width: 75%;
@@ -23,5 +22,6 @@
         .card:last-child{
             display: none;
         }
-    
+        
     }
+}
