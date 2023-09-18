@@ -344,7 +344,7 @@ span > h2 {
   flex-direction: column;
   align-items: flex-start;
   width: 360px;
-  background-color: #f8f8f8;
+  background-color: #f3eded;
 }
 
 .card-img {
@@ -362,6 +362,11 @@ span > h2 {
 .add-to-cart {
   display: none;
   justify-self: center;
+}
+
+.card-img:hover {
+  background-color: rgba(58, 56, 56, 0.86);
+  background-blend-mode: overlay;
 }
 
 .card-img:hover .add-to-cart {
@@ -588,6 +593,101 @@ footer {
   flex-direction: column;
 }
 
+@media (width <= 1025px) {
+  .threads-item-img {
+    width: 318px;
+  }
+  .down-one {
+    width: 100%;
+  }
+  html {
+    overflow-x: hidden;
+  }
+  header {
+    width: 100%;
+  }
+  .info-ad {
+    height: 384px;
+    width: 100%;
+  }
+  .info-ad > img {
+    width: 250px;
+  }
+  .threads {
+    margin: 20px 0px 0px;
+    margin-top: 20px;
+    justify-content: space-around;
+  }
+  .threads-item-img {
+    width: 340px;
+  }
+  .down-one {
+    width: 360px;
+    height: 260px;
+    background-size: cover;
+  }
+  .quick-sale {
+    gap: 10px;
+    justify-content: space-around;
+  }
+  .quick-sale-item,
+  .quick-sale-item-img {
+    width: 350px;
+  }
+  .fetured {
+    margin-top: 20px;
+  }
+  .footer-offers {
+    flex-wrap: wrap;
+  }
+  .form {
+    margin-bottom: 112px;
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .subscribe {
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 48px;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 64px;
+    position: relative;
+  }
+  .bg-img {
+    min-height: 100%;
+  }
+  .footer-contacts {
+    width: 100%;
+    gap: 0px;
+    justify-content: space-evenly;
+  }
+  .footer-offers {
+    padding: 20px 0px;
+    gap: 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .cart-container {
+    position: relative;
+    padding-bottom: 576px;
+  }
+  .purchase {
+    position: absolute;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    bottom: 8px;
+    gap: 16px;
+  }
+  .button-container {
+    position: absolute;
+    bottom: 464px;
+  }
+}
 @media (max-width: 426px) {
   .meta-header {
     width: 100%;
@@ -683,100 +783,5 @@ footer {
   }
   .subscribe-field-form {
     margin: 0px;
-  }
-}
-@media (width <= 1025px) {
-  .threads-item-img {
-    width: 318px;
-  }
-  .down-one {
-    width: 100%;
-  }
-  html {
-    overflow-x: hidden;
-  }
-  header {
-    width: 100%;
-  }
-  .info-ad {
-    height: 384px;
-    width: 100%;
-  }
-  .info-ad > img {
-    width: 250px;
-  }
-  .threads {
-    margin: 20px 0px 0px;
-    margin-top: 20px;
-    justify-content: space-around;
-  }
-  .threads-item-img {
-    width: 340px;
-  }
-  .down-one {
-    width: 360px;
-    height: 260px;
-    background-size: cover;
-  }
-  .quick-sale {
-    gap: 10px;
-    justify-content: space-around;
-  }
-  .quick-sale-item,
-  .quick-sale-item-img {
-    width: 350px;
-  }
-  .fetured {
-    margin-top: 20px;
-  }
-  .footer-offers {
-    flex-wrap: wrap;
-  }
-  .form {
-    margin-bottom: 112px;
-  }
-  footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .subscribe {
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 48px;
-    width: 100%;
-    overflow: hidden;
-    padding-top: 64px;
-    position: relative;
-  }
-  .bg-img {
-    min-height: 100%;
-  }
-  .footer-contacts {
-    width: 100%;
-    gap: 0px;
-    justify-content: space-evenly;
-  }
-  .footer-offers {
-    padding: 20px 0px;
-    gap: 20px;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-  .cart-container {
-    position: relative;
-    padding-bottom: 576px;
-  }
-  .purchase {
-    position: absolute;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    bottom: 8px;
-    gap: 16px;
-  }
-  .button-container {
-    position: absolute;
-    bottom: 464px;
   }
 }/*# sourceMappingURL=style.css.map */

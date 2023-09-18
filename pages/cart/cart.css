@@ -179,6 +179,10 @@ header {
   width: 32px;
 }
 
+html {
+  font-size: 22px;
+}
+
 button:hover {
   opacity: 0.7;
   cursor: pointer;
@@ -250,7 +254,7 @@ button:hover {
 }
 .product-title {
   font-family: Lato;
-  font-size: 24px;
+  font-size: 1.1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -262,7 +266,7 @@ button:hover {
 }
 .product-description {
   font-family: Lato;
-  font-size: 22px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -270,7 +274,7 @@ button:hover {
 }
 .product-price-amount {
   font-family: Lato;
-  font-size: 22px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -278,7 +282,7 @@ button:hover {
 }
 .product-price-amount::before {
   font-family: Lato;
-  font-size: 22px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -292,7 +296,7 @@ button:hover {
 
 .product-quantity {
   font-family: Lato;
-  font-size: 18px;
+  font-size: 0.8rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -448,7 +452,7 @@ button:hover {
   flex-direction: column;
   align-items: flex-start;
   width: 360px;
-  background-color: #f8f8f8;
+  background-color: #f3eded;
 }
 
 .card-img {
@@ -466,6 +470,11 @@ button:hover {
 .add-to-cart {
   display: none;
   justify-self: center;
+}
+
+.card-img:hover {
+  background-color: rgba(58, 56, 56, 0.86);
+  background-blend-mode: overlay;
 }
 
 .card-img:hover .add-to-cart {
@@ -788,10 +797,54 @@ footer {
   }
 }
 @media (width <= 1025px) {
+  html {
+    font-size: 14px;
+  }
   .cart-container {
     flex-direction: column;
     width: 100%;
     align-items: center;
     gap: 20px;
+  }
+}
+@media (width <= 425px) {
+  .title-container {
+    margin-bottom: 0px;
+    align-items: center;
+  }
+  .title {
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .product-container {
+    width: 100%;
+  }
+  .product {
+    width: 100%;
+  }
+  .product-img {
+    width: 143px;
+    height: 188px;
+  }
+  .delete-product > svg {
+    width: 8px;
+    height: 11px;
+  }
+  .cart-container {
+    margin-bottom: 160pxpx;
+  }
+  .purchase {
+    flex-direction: column;
+    bottom: -50px;
+  }
+  .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    bottom: 500px;
+  }
+  .button-container > button {
+    scale: 0.7;
   }
 }/*# sourceMappingURL=cart.css.map */

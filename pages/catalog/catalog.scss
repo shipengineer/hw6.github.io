@@ -5,6 +5,24 @@
 @import '../../css.modules/_item.scss';
 @import '../../css.modules/_footer.scss';
 
+a:hover {
+  animation: hover 300ms;
+  animation-fill-mode: forwards;
+}
+@keyframes hover {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1.05;
+  }
+  100% {
+    opacity: 1.1;
+    cursor: pointer;
+    background-color: #9f9f9f;
+    background-blend-mode: overlay;
+  }
+}
 .top-navigation {
   height: 148px;
   width: 1140px;
@@ -31,6 +49,7 @@
 }
 .filter {
   @include Lato(14px, 400);
+ 
   width: 1140px;
   display: flex;
   align-items: start;
@@ -40,9 +59,18 @@
 }
 .filter__button-abc {
   @include Lato(14px, 600);
-  margin-right: 320px;
+  
+  padding: 0;
   color: $filter-main;
+  width: 360px;
+  box-sizing: border-box;
 }
+.filter-button{
+  
+  box-sizing: border-box;
+  width: 360px;
+}
+
 .filter-button > svg {
   fill: $filter-main;
 }
@@ -58,7 +86,6 @@
   position: relative;
   z-index: 3;
   background-color: $main-background;
-  padding: 17px;
   filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
 }
 .filter-button {
@@ -90,14 +117,21 @@
   margin-right: 28px;
   cursor: pointer;
 }
+.filter__category--element{
+  margin: 0;
+  padding: 0;
+  margin-right: 28px;
+}
+
 .filter-parametr [open] {
   @include flex__position-center(column);
+  align-items: flex-start;
 }
 .filter__category--element::marker {
   content: '';
 }
 .filter__category--element::after {
-  content: url('./img/Vector.svg');
+  content: url(../../img/catalog/Vector.svg);
   margin-left: 10px;
 }
 .filter__category:hover {
@@ -116,14 +150,14 @@
 
 .filter__category__rigth {
   cursor: pointer;
-  margin-right: 28px;
+  // margin-right: 28px;
 }
 .filter-parametr [open] {
   background-color: $main-background;
   position: relative;
   z-index: 3;
   width: max-content;
-  padding: 9px;
+  padding: 0;
 }
 .filter-parametr:first-child {
   background-color: transparent;
@@ -169,3 +203,4 @@
   }
 }
 @import '../index/mobile/_tablet.scss';
+@import './adaptive/mobile.scss'

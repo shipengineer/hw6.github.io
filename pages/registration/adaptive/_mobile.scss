@@ -1,0 +1,53 @@
+@import '../../../css.modules/fonts.scss';
+@import '../../../css.modules/modificator.scss';
+
+@media (width <= 1140px) {
+    html {
+      font-size: 4px;
+    }
+    footer {
+      width: 100%;
+    }
+    .registration-container {
+      width: 100%;
+      flex-wrap: nowrap;
+      gap: 22px;
+  
+      div {
+        width: 354px;
+      }
+    }
+  
+    .form {
+      &-radiobuttons {
+        justify-content: flex-start;
+      }
+     
+    }
+    .perks-list-item {
+      margin-left: 20px;
+    }
+    .perks-description {
+      width: 100%;
+    }
+  }
+@media (width <= 425px){
+.registration-container{
+flex-direction: column;
+margin-left: 10px;
+}
+.form {
+    margin-bottom: 0px;
+}
+.title-container{
+    margin-bottom: 0px;
+    align-items: center;
+}
+.title{
+    width: min-content;
+}
+.form{.button-join{
+    margin: 30px 0px;
+}
+}
+}
