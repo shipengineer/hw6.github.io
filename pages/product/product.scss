@@ -1,0 +1,122 @@
+@import '../../css.modules/_zero-style.scss';
+@import '../../css.modules/_modificator.scss';
+@import '../../css.modules/_main-colors.scss';
+@import '../../css.modules/_header.scss';
+@import '../../css.modules/_item.scss';
+@import '../../css.modules/_footer.scss';
+@import '../../css.modules/fonts';
+@import '../index/mobile/mobile';
+@import '../index/mobile/tablet';
+html{
+  font-size: 14px;
+}
+a:hover {
+  animation: hover 300ms;
+  animation-fill-mode: forwards;
+}
+@keyframes hover {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1.05;
+  }
+  100% {
+    opacity: 1.1;
+    cursor: pointer;
+    background-color: #9f9f9f;
+    background-blend-mode: overlay;
+  }
+}
+.top-navigation {
+  height: 148px;
+  width: 1140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.category-name {
+  @include Lato(24px, 400);
+  color: $primary;
+  width: 194px;
+}
+.breadcrumbs {
+  @include Lato(1rem, 400);
+  display: flex;
+  flex-direction: row;
+  color: $filter-main;
+}
+.breadcrumbs > a {
+  text-decoration: none;
+}
+.breadcrumbs_link:not(:last-child)::after {
+  content: '\/';
+}
+.carousel{
+  width: 100%;
+  @include flex__position-center(row);
+  justify-content: space-between;
+  &__button{
+    background-color: rgba(42, 42, 42, 0.15);
+    width: 47px;
+    height: 47px;
+  }
+}
+
+.main-product{
+  @include flex__position-center(column);
+  &__category{
+    @include Lato(14px,300);
+    color: $primary;
+  }
+  & svg{
+    margin: 12px 0px;
+  }
+  &__name{
+    @include Lato(18px,300);
+    color:$text-color-primary;
+    margin-bottom: 48px;
+    
+  }
+  &__describe{
+    width: 555px;
+    @include Lato(18px,300);
+    color:$text-color-secondary;
+  text-align: center;
+  margin-bottom: 32px;
+  }
+  &__price{
+    @include Lato(24px,300);
+    color: $primary;
+    &::before{
+      content: "$";
+    }
+    margin-bottom: 130px;
+  }
+  .main-product-filter--container{
+  @include flex__position-center(row);
+  width: 100%;
+  gap: 42px;
+margin-bottom: 48px;
+  }
+  &__filter_details{
+    @include Lato(14px,300);
+    &::marker{
+      content: '';
+    }
+    &::after{
+      content: url(../../img/catalog/Vector.svg);
+    margin-left: 9px;
+    }
+  }
+  &__add-to-cart{
+    margin-bottom: 64px;
+  }
+}
+.others{
+  @include flex__position-center(row);
+
+}
+@import '../index/mobile/mobile';
+@import '../index/mobile/tablet';
+@import './adaptive/_mobile.scss'

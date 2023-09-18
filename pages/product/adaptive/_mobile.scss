@@ -1,0 +1,27 @@
+@import '../../../css.modules/modificator.scss';
+@import '../../../css.modules/main-colors.scss';
+@import '../../../css.modules/fonts.scss';
+
+@media (width <= 1024px) {
+    html{
+        font-size: 8px;
+    }
+    }
+    .carousel {
+    width: 100%;
+    }
+    .carousel > img {
+        width: 75%;
+    }
+    .main-product{
+        &__describe{
+            width: 95%;
+        }
+    }
+    .others{
+        flex-direction: column;
+        .card:last-child{
+            display: none;
+        }
+    
+    }

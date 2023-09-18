@@ -95,39 +95,9 @@ button:hover {
     }
   }
 }
-
-@media (width <= 1140px) {
-  html {
-    font-size: 4px;
-  }
-  footer {
-    width: 100%;
-  }
-  .registration-container {
-    width: 100%;
-    flex-wrap: nowrap;
-    gap: 22px;
-
-    div {
-      width: 354px;
-    }
-  }
-
-  .form {
-    &-radiobuttons {
-      justify-content: flex-start;
-    }
-    .button-join {
-      margin: 0;
-    }
-  }
-  .perks-list-item {
-    margin-left: 20px;
-  }
-  .perks-description {
-    width: 100%;
-  }
-}
 @import '../../css.modules/_item.scss';
 @import '../../css.modules/_footer.scss';
 @import '../index/mobile/_tablet.scss';
+@import './adaptive/_mobile.scss';
+
+

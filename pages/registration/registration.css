@@ -324,34 +324,6 @@ button:hover {
   content: url(../../img/Vector.svg);
 }
 
-@media (width <= 1140px) {
-  html {
-    font-size: 4px;
-  }
-  footer {
-    width: 100%;
-  }
-  .registration-container {
-    width: 100%;
-    flex-wrap: nowrap;
-    gap: 22px;
-  }
-  .registration-container div {
-    width: 354px;
-  }
-  .form-radiobuttons {
-    justify-content: flex-start;
-  }
-  .form .button-join {
-    margin: 0;
-  }
-  .perks-list-item {
-    margin-left: 20px;
-  }
-  .perks-description {
-    width: 100%;
-  }
-}
 .quick-sale {
   max-width: 1140px;
   margin-top: 48px;
@@ -370,7 +342,7 @@ button:hover {
   flex-direction: column;
   align-items: flex-start;
   width: 360px;
-  background-color: #f8f8f8;
+  background-color: #f3eded;
 }
 
 .card-img {
@@ -388,6 +360,11 @@ button:hover {
 .add-to-cart {
   display: none;
   justify-self: center;
+}
+
+.card-img:hover {
+  background-color: rgba(58, 56, 56, 0.86);
+  background-blend-mode: overlay;
 }
 
 .card-img:hover .add-to-cart {
@@ -707,5 +684,50 @@ footer {
   .button-container {
     position: absolute;
     bottom: 464px;
+  }
+}
+@media (width <= 1140px) {
+  html {
+    font-size: 4px;
+  }
+  footer {
+    width: 100%;
+  }
+  .registration-container {
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 22px;
+  }
+  .registration-container div {
+    width: 354px;
+  }
+  .form-radiobuttons {
+    justify-content: flex-start;
+  }
+  .perks-list-item {
+    margin-left: 20px;
+  }
+  .perks-description {
+    width: 100%;
+  }
+}
+@media (width <= 425px) {
+  .registration-container {
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .form {
+    margin-bottom: 0px;
+  }
+  .title-container {
+    margin-bottom: 0px;
+    align-items: center;
+  }
+  .title {
+    width: -moz-min-content;
+    width: min-content;
+  }
+  .form .button-join {
+    margin: 30px 0px;
   }
 }/*# sourceMappingURL=registration.css.map */

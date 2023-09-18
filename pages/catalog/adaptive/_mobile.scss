@@ -1,0 +1,41 @@
+@import '../../../css.modules/fonts.scss';
+@import '../../../css.modules/modificator.scss';
+@media (width <= 425px) {
+  .breadcrumbs{
+@include Lato(10px,400);
+}
+
+.filter-button{
+    width: max-content ;
+    -webkit-text-fill-color: #fff;
+
+}
+.filter-button > svg{
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    }
+.filter__button-abc{
+    width: 150px
+
+}
+.header-container > div{
+@include flex__position-center(row);
+gap: 0;
+}  
+.filter__category--element::after {margin-left: 5px;}
+.filter-parametr{
+    gap: 25px;
+}
+.filter__category--element {
+    margin: 0px};
+.search-button{
+    margin: 0;
+}
+.top-navigation{
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+}
+

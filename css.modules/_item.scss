@@ -1,5 +1,5 @@
 @import './_modificator.scss';
-@import './_main-colors.scss';
+@import './main-colors';
 @import './_fonts.scss';
 .quick-sale {
   max-width: 1140px;
@@ -12,7 +12,8 @@
   @include flex__position-center(column);
   align-items: flex-start;
   width: 360px;
-  background-color: #f8f8f8;
+  background-color: $card-image-background;
+  
 }
 
 .card-img {
@@ -27,10 +28,10 @@
   display: none;
   justify-self: center;
 }
-// .card-img:hover {
-//   background-color: rgba(58, 56, 56, 0.86);
-//   background-blend-mode: overlay;
-// }
+.card-img:hover {
+  background-color: rgba(58, 56, 56, 0.86);
+  background-blend-mode: overlay;
+}
 
 .card-img:hover .add-to-cart {
   display: block;

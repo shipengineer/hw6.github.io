@@ -1,0 +1,53 @@
+@import '../../../css.modules/fonts.scss';
+@import '../../../css.modules/modificator.scss';
+@media (width <= 1025px) {
+    html{
+        font-size: 14px;
+    }
+    .cart-container {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+  
+@media (width <= 425px){
+    .title-container{
+        margin-bottom: 0px;
+        align-items: center;
+    }
+    .title{
+        width: max-content;
+    }
+    .product-container{
+        width: 100%;
+       
+    }
+    .product{
+        width: 100%;
+        &-img{
+            width: 143px;
+            height: 188px;
+        }
+    }
+    .delete-product > svg{
+        width: 8px;
+        height: 11px;
+    }
+    .cart-container{
+        margin-bottom: 160pxpx;
+    }
+    .purchase{
+        flex-direction: column;
+        bottom: -50px;
+       
+    }
+    .button-container{
+        @include flex__position-center(row);
+        bottom: 500px;
+    }
+    .button-container >button{
+        scale: 0.7;
+    }
+}
