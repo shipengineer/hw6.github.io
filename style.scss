@@ -1,7 +1,7 @@
-@import './css.modules/_zero-style.scss';
-@import './css.modules/_modificator.scss';
-@import './css.modules/_main-colors.scss';
-@import './css.modules/_header.scss';
+@import "./css.modules/_zero-style.scss";
+@import "./css.modules/_modificator.scss";
+@import "./css.modules/_main-colors.scss";
+@import "./css.modules/_header.scss";
 button:hover {
   opacity: 0.7;
   cursor: pointer;
@@ -111,8 +111,8 @@ span > h2 {
   text-decoration: none;
 }
 
-@import './css.modules/_item.scss';
-@import './css.modules/_footer.scss';
-
-@import './pages/index/mobile/_tablet.scss';
-@import './pages/index/mobile/_mobile.scss';
+@import "./css.modules/_item.scss";
+@import "./css.modules/_footer.scss";
+@import "./pages/cart/cart.scss";
+@import "./pages/index/mobile/_tablet.scss";
+@import "./pages/index/mobile/_mobile.scss";
