@@ -73,7 +73,11 @@ async function downloadFeaturedItems() {
 }
 downloadFeaturedItems();
 const featureContainer = document.querySelector(".quick-sale");
-
+const cart = document.querySelector(".user-cart");
+cart.addEventListener("change", (e) => {
+  if (e.target.tagName("INPUT")) {
+  }
+});
 /* <div class="product">
 <img src="../../img/item/featured-left-up.png" class="product-img        ">
 <div class="product-about">
