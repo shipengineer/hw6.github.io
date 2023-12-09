@@ -326,6 +326,10 @@ span > h2 {
   text-decoration: none;
 }
 
+.user-cart {
+  display: none;
+}
+
 .quick-sale {
   max-width: 1140px;
   margin-top: 48px;

@@ -1,3 +1,4 @@
+const cartContain = {};
 async function downloadFeaturedItems() {
   const responce = await fetch("dataBase/featuredItems.json");
   const items = await responce.json();
@@ -7,7 +8,7 @@ async function downloadFeaturedItems() {
       "beforeend",
       `
       <div class="card" >
-          <a href="#" class="card-img" style="background-image: url(${item.url})"><img
+          <a  class="card-img" style="background-image: url(${item.url})"><img
                   src="./img/item/Add to cart.png" class="add-to-cart" alt="добавить в корзину" id='${item.id}'></a>
           <span class="card-title">${item.title}</span>
           <span class="card-description">${item.description}</span>
@@ -17,17 +18,16 @@ async function downloadFeaturedItems() {
     `
     );
   });
-  const cartContain = {};
+  const cartContainer = document.querySelector(".user-cart");
   document.addEventListener("click", (e) => {
     const cart = document.getElementById("user-cart-container");
+    cartContainer.style.display = "block";
     const clickedItem = items[e.target.id];
     if (e.target.classList.contains("add-to-cart")) {
       if (Object.keys(cartContain).includes(`${clickedItem.id}`)) {
         document.getElementById(`${clickedItem.id}`).value =
           document.getElementById(`${clickedItem.id}`).value + 1;
         cartContain[clickedItem.id]++;
-        console.log(cartContain);
-        console.log(document.getElementById(`${clickedItem.id}`));
         document.getElementById(`quantity-${clickedItem.id}`).value =
           cartContain[clickedItem.id];
       } else {
@@ -39,7 +39,7 @@ async function downloadFeaturedItems() {
     <div class="product">
   <img src="${clickedItem.url}" class="product-img        ">
   <div class="product-about">
-    <a href="#" class="product-title">${clickedItem.title}</a>
+    <a  class="product-title">${clickedItem.title}</a>
     <span class="product-description">Price: <span class="product-price-amount">${
       clickedItem.price
     }</span>
@@ -75,13 +75,23 @@ downloadFeaturedItems();
 const featureContainer = document.querySelector(".quick-sale");
 const cart = document.querySelector(".user-cart");
 cart.addEventListener("change", (e) => {
-  if (e.target.tagName("INPUT")) {
+  if (e.target.tagName === "INPUT") {
+    const idToChange = e.target.id.slice(-1);
+    cartContain[idToChange] = e.target.value;
+    if (e.target.value === "0") {
+      e.target.parentNode.parentNode.parentNode.remove();
+      delete cartContain[idToChange];
+    }
+    if (Object.keys(cartContain).length === 0) {
+      const cartContainer = document.querySelector(".user-cart");
+      cartContainer.style.display = "none";
+    }
   }
 });
 /* <div class="product">
 <img src="../../img/item/featured-left-up.png" class="product-img        ">
 <div class="product-about">
-    <a href="#" class="product-title">MANGO PEOPLE T-SHIRT</a>
+    <a  class="product-title">MANGO PEOPLE T-SHIRT</a>
     <span class="product-description">Price: <span class="product-price-amount">300</span>
     </span>
     <span class="product-description">Color: <span class="product-color">Red</span>

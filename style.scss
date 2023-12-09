@@ -110,7 +110,9 @@ span > h2 {
   color: #f26376;
   text-decoration: none;
 }
-
+.user-cart {
+  display: none;
+}
 @import "./css.modules/_item.scss";
 @import "./css.modules/_footer.scss";
 @import "./pages/cart/cart.scss";
