@@ -21,9 +21,9 @@ async function downloadFeaturedItems() {
   const cartContainer = document.querySelector(".user-cart");
   document.addEventListener("click", (e) => {
     const cart = document.getElementById("user-cart-container");
-    cartContainer.style.display = "block";
     const clickedItem = items[e.target.id];
     if (e.target.classList.contains("add-to-cart")) {
+      cartContainer.style.display = "block";
       if (Object.keys(cartContain).includes(`${clickedItem.id}`)) {
         document.getElementById(`${clickedItem.id}`).value =
           document.getElementById(`${clickedItem.id}`).value + 1;
@@ -36,7 +36,7 @@ async function downloadFeaturedItems() {
         cart.insertAdjacentHTML(
           "beforeend",
           `
-    <div class="product">
+    <div class="product" id='product-${clickedItem.id}'>
   <img src="${clickedItem.url}" class="product-img        ">
   <div class="product-about">
     <a  class="product-title">${clickedItem.title}</a>
@@ -109,3 +109,16 @@ cart.addEventListener("change", (e) => {
             fill="#575757" />
     </svg></button>
 </div> */
+cart.addEventListener("click", (e) => {
+  console.log(e.target.tagName);
+  if (e.target.tagName === "PATH" || "SVG") {
+    console.log(e.target.closest(".product"));
+    const idToChange = e.target.closest(".product").id.slice(8);
+    console.log(idToChange);
+    e.target.closest(".product").remove();
+    delete cartContain[idToChange];
+    if (Object.keys(cartContain).length === 0) {
+      document.getElementById("user-cart").style.display = "none";
+    }
+  }
+});
