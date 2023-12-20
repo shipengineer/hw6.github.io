@@ -1,4 +1,5 @@
-const cartContain = {};
+const cartContain = {}; //переменная контейнера для корзины
+//асинхронная погрузка всех доступных товаров к добавлению в корзину 
 async function downloadFeaturedItems() {
   const responce = await fetch("dataBase/featuredItems.json");
   const items = await responce.json();
@@ -19,11 +20,14 @@ async function downloadFeaturedItems() {
     );
   });
   const cartContainer = document.querySelector(".user-cart");
+//событие добавление в корзину первого товара
   document.addEventListener("click", (e) => {
     const cart = document.getElementById("user-cart-container");
     const clickedItem = items[e.target.id];
+//проверка кликнутой кнопки добавления по классу
     if (e.target.classList.contains("add-to-cart")) {
       cartContainer.style.display = "block";
+//проверка на наличие в корзине уже имеющегося товара с этим ид
       if (Object.keys(cartContain).includes(`${clickedItem.id}`)) {
         document.getElementById(`${clickedItem.id}`).value =
           document.getElementById(`${clickedItem.id}`).value + 1;
@@ -31,6 +35,7 @@ async function downloadFeaturedItems() {
         document.getElementById(`quantity-${clickedItem.id}`).value =
           cartContain[clickedItem.id];
       } else {
+//если нет в корзине, делаем отрисовку
         cartContain[clickedItem.id] = 1;
 
         cart.insertAdjacentHTML(
@@ -74,6 +79,7 @@ async function downloadFeaturedItems() {
 downloadFeaturedItems();
 const featureContainer = document.querySelector(".quick-sale");
 const cart = document.querySelector(".user-cart");
+//слушатель на проверку изменения значения уже в корзине а не кликом по товару 
 cart.addEventListener("change", (e) => {
   if (e.target.tagName === "INPUT") {
     const idToChange = e.target.id.slice(-1);
@@ -109,12 +115,15 @@ cart.addEventListener("change", (e) => {
             fill="#575757" />
     </svg></button>
 </div> */
+//слушатель на удаление 
 cart.addEventListener("click", (e) => {
   console.log(e.target.tagName);
+//свг или пас очень близко легко промахнуться, поэтому проверка и на то или на то
   if (e.target.tagName === "PATH" || "SVG") {
     console.log(e.target.closest(".product"));
     const idToChange = e.target.closest(".product").id.slice(8);
     console.log(idToChange);
+//берём ближайшего посредством closest 
     e.target.closest(".product").remove();
     delete cartContain[idToChange];
     if (Object.keys(cartContain).length === 0) {
